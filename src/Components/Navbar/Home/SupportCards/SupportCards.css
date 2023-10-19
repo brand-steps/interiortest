@@ -1,0 +1,28 @@
+.blue-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .blue-bottom {
+    background-color: blue;
+    height: 20px; /* Adjust the height as needed */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .hole{
+    position: absolute;
+    top: -10%;
+  }
+  .cardofContent{
+    position: relative;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+background-color: white;
+
+  }
