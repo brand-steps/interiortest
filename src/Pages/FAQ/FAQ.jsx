@@ -124,11 +124,7 @@ Then there is the trading discipline that we emphasize. You cannot be all loosey
         <Accordion.Content>
           <p className="mb-2 text-gray-500 dark:text-gray-400">
             <p>
-           Traders will have the same account balance size as chosen for their preceding Competition and Verification.
-To avoid any confusion, after a client becomes an Trader, he/she will be provided with a demo account with fictitious capital. Clients are entitled to up to 90% of results generated on the Account. 
-<br/> <br/> 
-We do not have upgrading options so you need to choose the appropriate account size right at the beginning when you are configuring your Challenge. You can, however, start a new Challenge and upon successfully passing another Evaluation Process, we will provide you with another Account. Just keep in mind that our maximum capital allocation on FTMO Accounts is $400,000 per trader/strategy.
-            <br/>
+            MY Forex competition offers a range of thrilling options to choose from. You've got the basic level, where you can show off your skills with a $10,000 account. Then there's the amateur level, where you can take it up a notch with a $25,000 account. And for the true pros, there's the professional level, where you can showcase your expertise with a $50,000 account. With even more exciting options on the horizon, this competition is sure to keep you on the edge of your seat! Get ready to dive into the world of forex trading and make your mark in this thrilling competition
             </p>
           </p>
 

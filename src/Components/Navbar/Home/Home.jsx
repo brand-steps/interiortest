@@ -26,7 +26,7 @@ const Home = () => {
       {/* <MidCards /> */}
       <div
         style={{
-          backgroundColor: "#EBF4F8",
+          /*backgroundColor: "#EBF4F8",*/
           paddingTop: "4rem ",
           paddingBottom: "100px",
         }}

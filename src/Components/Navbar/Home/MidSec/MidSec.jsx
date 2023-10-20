@@ -10,7 +10,7 @@ const MidSec = () => {
   return (
     <div
       className="flex flex-col items-center justify-center mainContent"
-      style={{ height: "120vh" }}
+      style={{ height: "110vh" }}
     >
       <div
         className="text-center"
@@ -20,7 +20,7 @@ const MidSec = () => {
         <p className="text-white TESTIMONIALS ">Your Capital, Your Pocket</p>
         <h1
           className="font-bold mid-para text-white"
-          style={{ fontSize: "50px" }}
+          style={{ fontSize: "30px" }}
         >
           World's First Forex Competition 30% Traders Are Profitable No Daily Or Maximum Drawdown
           {/*<div className="s-h-number">4.9</div>

@@ -3,7 +3,7 @@ import imglogo from '../../../Images/My Forex Competition p-05.png'
 
 const Footer = () => {
   return (
-<footer style={{"backgroundColor": "#03041D"}} class="relative pt-8 pb-6">
+<footer style={{"backgroundColor": "black"}} class="relative pt-8 pb-6">
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap text-left lg:text-left">
       <div class="w-full lg:w-6/12 px-4">
@@ -13,10 +13,10 @@ const Footer = () => {
           Find us on any of these platforms, we respond 1-2 business days.
         </h5> */}
         <div class="mt-6 lg:mb-0 mb-6">
-          <button style={{"backgroundColor" : "#06B3C9"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-twitter"></i></button><button  style={{"backgroundColor" : "#06B3C9"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-facebook-square"></i></button><button style={{"backgroundColor" : "#06B3C9"}}  class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-dribbble"></i></button><button  style={{"backgroundColor" : "#06B3C9"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+          <button style={{"backgroundColor" : "red"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-twitter"></i></button><button  style={{"backgroundColor" : "red"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-facebook-square"></i></button><button style={{"backgroundColor" : "red"}}  class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-whatsapp"></i></button><button  style={{"backgroundColor" : "red"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
             <i class="fab fa-github"></i>
           </button>
         </div>

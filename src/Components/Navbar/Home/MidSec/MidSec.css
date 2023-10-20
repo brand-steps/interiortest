@@ -22,8 +22,10 @@
     margin-left: 27%;
 }
 .btns {
-  background-color: #0570A6;
+  background-color: black;
+  color: white;
 }
 .btns:hover {
-  background-color: #05335e;
+  background-color: red;
+  color: black;
 }

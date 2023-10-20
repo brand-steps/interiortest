@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* style={{ backgroundColor: "#050628" }}  */}
 
       <nav
-        style={{ backgroundColor: "#0570A6" }}
+        style={{ backgroundColor: "black" }}
         className="nav flex flex-wrap  items-center justify-between px-6"
       >
         <div className="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
@@ -104,7 +104,7 @@ const Navbar = () => {
           {/* Client Area */}
           <li
             className="text-white font-bold hover:text-blue-500 "
-            style={{ fontSize: "16px", color: "blue" }}
+            style={{ fontSize: "16px", color: "yellow" }}
           >
             <Link to="/OurDocument">
               Client Area{" "}
@@ -132,7 +132,7 @@ const Navbar = () => {
           <Link to="/login">
             <button
               type="button"
-              className="self-end text-black font-medium text-sm px-5 py-2.5 mr-2 focus:outline-none dark:focus:ring-blue-800  hover:text-white transition duration-300 ease-in-out"
+              className="self-end text-black font-medium text-sm px-5 py-2.5 mr-2 focus:outline-none dark:focus:ring-blue-800 hover:text-white transition duration-300 ease-in-out bts"
               variant="primary"
             >
               Sign in
