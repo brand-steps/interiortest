@@ -132,7 +132,8 @@
 }
 .mainContent {
   height: 80vh;
-  background-image: url("../Images/web\ banner-03.jpg");
+  /*background-image: url("../Images/web\ banner-03.jpg");*/
+  background-image: url("../../assets/img2.jpg");
   background-size: cover;
   background-position: center;
 }

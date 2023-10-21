@@ -27,13 +27,13 @@ const Footer = () => {
             <span class="block uppercase text-white text-sm font-semibold mb-2">Program</span>
             <ul class="list-unstyled">
               <li>
-                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="">Basic </a>
+                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="/">Basic </a>
               </li>
               <li>
-                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="">Amateur </a>
+                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="/">Amateur </a>
               </li>
               <li>
-                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="">Professional</a>
+                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="/">Professional</a>
               </li>
             </ul>
           </div>
@@ -42,13 +42,13 @@ const Footer = () => {
             <ul class="list-unstyled">
 
               <li>
-                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="">Basic </a>
+                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="/FAQ">Basic </a>
               </li>
               <li>
-                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="">Amateur </a>
+                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="/FAQ">Amateur </a>
               </li>
               <li>
-                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="">Professional</a>
+                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="/FAQ">Professional</a>
               </li>
             </ul>
           </div>
@@ -61,12 +61,7 @@ const Footer = () => {
               <li>
                 <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="">Terms &amp; Conditions</a>
               </li>
-              <li>
-                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="">Risk Disclosure </a>
-              </li>
-              <li>
-                <a class="text-white hover:text-white font-semibold block pb-2 text-sm" href="">Anti-Money Laundering (AML) Guidelines</a>
-              </li>
+
             </ul>
           </div>
         </div>

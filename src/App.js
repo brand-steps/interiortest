@@ -8,6 +8,9 @@ import Signup from "./Pages/Siginup/Signup";
 import Login from "./Pages/Login/Login";
 import Howwork from "./Pages/Howworks";
 import ABoutus from "./Pages/Aboutus/ABoutus";
+import BuyBasic from "./Pages/Buypages/BuyBasic";
+import BuyAmateur from "./Pages/Buypages/BuyAmateur";
+import BuyProfessional from "./Pages/Buypages/Buyprofessional";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path={"/login"} element={<Login />} />
           <Route path={"/Howworks"} element={<Howwork />} />
           <Route path={"/Aboutus"} element={<ABoutus />} />
+          <Route path={"/BuyBasic"} element={<BuyBasic />} />
+          <Route path={"/BuyAmateur"} element={<BuyAmateur />} />
+          <Route path={"/BuyProfessional"} element={<BuyProfessional />} />
 
         </Routes>
       </BrowserRouter>

@@ -11,13 +11,38 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  const [responce  , setResponce] = useState("")
   let [user, setUser] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const getProfile = async () => {
+      try {
+        let response = await axios.get(
+          `http://localhost:8000/api/v1/profile`,
+          {
+            withCredentials: true,
+            headers: {
+              "Cache-Control": "no-cache",
+              Pragma: "no-cache",
+              Expires: "0",
+            },
+          }
+        );
+
+        // console.log("response: ", response);
+        setResponce(response.data);
+        setUser(true);
+      } catch (error) {
+        console.log("axios error: ", error);
+      }
+    };
+    getProfile();
+  }, []);
 
   return (
     <div>

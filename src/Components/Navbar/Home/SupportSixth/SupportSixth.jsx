@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import bull from '../../../Images/My FPrec Competition bull blue-01.png'
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const   SupportSixth = () => {
+  const navigate = useNavigate();
   const [Basic, setBasic] = useState(true);
   const [Amateur, setAmateur] = useState(false);
   const [professional, setProfessional] = useState(false);
-
+  const [responce  , setResponce] = useState("")
+  let [user, setUser] = useState(false);
 
 const styles = {
     backgroundColor : 'rgb(239 68 68)',
@@ -39,7 +43,34 @@ const professionalfunction = () => {
   setAmateur(false);
   setBasic(false);
   setProfessional(true)
-}
+};
+
+useEffect(() => {
+
+  const getProfile = async () => {
+    try {
+      let response = await axios.get(`http://localhost:8000/api/v1/profile`,
+        {
+          withCredentials: true,
+          headers: {
+            'Cache-Control': 'no-cache',
+            'Pragma': 'no-cache',
+            'Expires': '0',
+          }
+        });
+        console.log("response: ", response.data);
+        setUser(true);
+        setResponce(response.data)
+    } catch (error) {
+      console.log("axios error: ", error);
+
+
+    }
+
+  }
+  getProfile();
+
+}, [])
     return (
         <div style={{"backgroundColor" : "white"}}  className='py-6 mt-4'  >
             <div class="flex flex-col items-center justify-center my-8 px-4 md:px-8 lg:px-16">
@@ -115,13 +146,22 @@ d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.
 
 Third prize: 30$
       </h1>
-      
+      {user ? (
       <div className="flex flex-col md:flex-row justify-center mt-4 ">
-        <button style={{ backgroundColor: "rgb(153 27 27)" }} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
+      <button style={{ backgroundColor: "rgb(153 27 27)" }} onClick={() => {navigate("/BuyBasic")}} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
+        Buy Now
+      </button>
+
+    </div>
+        ) : 
+        <div className="flex flex-col md:flex-row justify-center mt-4 ">
+        <button style={{ backgroundColor: "rgb(153 27 27)" }} onClick={()=> {navigate("/login")}} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
           Buy Now
         </button>
 
       </div>
+        }
+
     </div>
   </div>
   
@@ -186,12 +226,21 @@ d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.
 
 Third Prize: 75$
       </h1>
-      <div className="flex flex-col md:flex-row justify-center mt-4">
-        <button style={{ backgroundColor: "rgb(153 27 27)" }} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
+      {user ? (
+      <div className="flex flex-col md:flex-row justify-center mt-4 ">
+      <button style={{ backgroundColor: "rgb(153 27 27)" }} onClick={() => {navigate("/BuyAmateur")}} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
+        Buy Now
+      </button>
+
+    </div>
+        ) : 
+        <div className="flex flex-col md:flex-row justify-center mt-4 ">
+        <button style={{ backgroundColor: "rgb(153 27 27)" }} onClick={()=> {navigate("/login")}} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
           Buy Now
         </button>
 
       </div>
+        }
     </div>
   </div>
   
@@ -255,12 +304,21 @@ d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.
 Third Prize: 130$
       </h1>
       
-      <div className="flex flex-col md:flex-row justify-center mt-4">
-        <button style={{ backgroundColor: "rgb(153 27 27)" }} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
+      {user ? (
+      <div className="flex flex-col md:flex-row justify-center mt-4 ">
+      <button style={{ backgroundColor: "rgb(153 27 27)" }} onClick={() => {navigate("/BuyProfessional")}} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
+        Buy Now
+      </button>
+
+    </div>
+        ) : 
+        <div className="flex flex-col md:flex-row justify-center mt-4 ">
+        <button style={{ backgroundColor: "rgb(153 27 27)" }} onClick={()=> {navigate("/login")}} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
           Buy Now
         </button>
 
       </div>
+        }
     </div>
   </div>
 </div>
