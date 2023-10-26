@@ -131,7 +131,7 @@ const Navbar = () => {
             className="text-white font-bold hover:text-blue-500 "
             style={{ fontSize: "16px", color: "yellow" }}
           >
-            <Link to="/OurDocument">
+            <Link to="/Clientarea">
               Client Area{" "}
               {/* <i className="fa fa-caret-down ml-2" aria-hidden="true"></i> */}
             </Link>

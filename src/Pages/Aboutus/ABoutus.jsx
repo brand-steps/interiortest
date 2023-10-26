@@ -36,9 +36,6 @@ Our Main head office is In London UK and have sub branches In Asia and Europe</p
       <div style={containerStyle}>
         <img src={img1} alt="Fairs" style={imageStyle} />
       </div>
-
-
-      
     </div>
     <Footer/>
     </>

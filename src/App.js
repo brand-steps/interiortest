@@ -11,6 +11,8 @@ import ABoutus from "./Pages/Aboutus/ABoutus";
 import BuyBasic from "./Pages/Buypages/BuyBasic";
 import BuyAmateur from "./Pages/Buypages/BuyAmateur";
 import BuyProfessional from "./Pages/Buypages/Buyprofessional";
+import Leaderboard from "./Pages/Clientarea/Leaderboard";
+import Addimage from "./Pages/Addimage/Addimage";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path={"/BuyBasic"} element={<BuyBasic />} />
           <Route path={"/BuyAmateur"} element={<BuyAmateur />} />
           <Route path={"/BuyProfessional"} element={<BuyProfessional />} />
+          <Route path={"/Clientarea"} element={<Leaderboard />} />
+          <Route path={"/Addimage"} element={<Addimage />} />
 
         </Routes>
       </BrowserRouter>

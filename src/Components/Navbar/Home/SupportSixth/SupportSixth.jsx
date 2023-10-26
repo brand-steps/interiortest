@@ -10,6 +10,43 @@ const   SupportSixth = () => {
   const [professional, setProfessional] = useState(false);
   const [responce  , setResponce] = useState("")
   let [user, setUser] = useState(false);
+  const buttonStyle = {
+    background: 'rgb(239 68 68)',
+    color: 'white',
+    fontWeight: 'bold',
+    padding: '8px 16px',
+    marginTop: '12px',
+    cursor: 'pointer',
+    width: '130px',
+  };
+  const buttonStyle2 = {
+    background: 'rgb(220 38 38)',
+    color: 'white',
+    fontWeight: 'bold',
+    padding: '8px 16px',
+    marginTop: '12px',
+    cursor: 'pointer',
+    width: '130px',
+  };
+  const buttonStyle3 = {
+    background: 'rgb(185 28 28)',
+    color: 'white',
+    fontWeight: 'bold',
+    padding: '8px 16px',
+    marginTop: '12px',
+    cursor: 'pointer',
+    width: '130px',
+  };
+  const containerStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '20px',
+    borderRadius: '8px',
+    width: '140px', // Adjust the width as needed
+    // background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
+  };
 
 const styles = {
     backgroundColor : 'rgb(239 68 68)',
@@ -146,6 +183,23 @@ d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.
 
 Third prize: 30$
       </h1>
+      <h1 className="text-black mt-4 flex items-center mb-6 text-xl text-md">
+      <div  className='mr-2 '  >
+<svg
+width="20"    
+height="20"   
+viewBox="0 0 512 512"
+fill="rgb(185 28 28)"  
+xmlns="http://www.w3.org/2000/svg"
+>
+<path
+d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm80 248c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80z"
+></path>
+</svg>
+</div>
+
+Entry Fees: 25$
+      </h1>
       {user ? (
       <div className="flex flex-col md:flex-row justify-center mt-4 ">
       <button style={{ backgroundColor: "rgb(153 27 27)" }} onClick={() => {navigate("/BuyBasic")}} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
@@ -226,6 +280,23 @@ d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.
 
 Third Prize: 75$
       </h1>
+      <h1 className="text-black mt-4 flex items-center mb-6 text-xl text-md">
+      <div  className='mr-2 '  >
+<svg
+width="20"    
+height="20"   
+viewBox="0 0 512 512"
+fill="rgb(185 28 28)"  
+xmlns="http://www.w3.org/2000/svg"
+>
+<path
+d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm80 248c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80z"
+></path>
+</svg>
+</div>
+
+Entry Fees: 49$
+      </h1>
       {user ? (
       <div className="flex flex-col md:flex-row justify-center mt-4 ">
       <button style={{ backgroundColor: "rgb(153 27 27)" }} onClick={() => {navigate("/BuyAmateur")}} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
@@ -303,7 +374,23 @@ d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.
 
 Third Prize: 130$
       </h1>
-      
+      <h1 className="text-black mt-4 flex items-center mb-6 text-xl text-md">
+      <div  className='mr-2 '  >
+<svg
+width="20"    
+height="20"   
+viewBox="0 0 512 512"
+fill="rgb(185 28 28)"  
+xmlns="http://www.w3.org/2000/svg"
+>
+<path
+d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm80 248c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80z"
+></path>
+</svg>
+</div>
+
+Entry Fees: 99$
+      </h1>
       {user ? (
       <div className="flex flex-col md:flex-row justify-center mt-4 ">
       <button style={{ backgroundColor: "rgb(153 27 27)" }} onClick={() => {navigate("/BuyProfessional")}} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out">
@@ -325,7 +412,22 @@ Third Prize: 130$
 
 
 
+<div className='flex  justify-evenly flex-wrap my-4'>
+      <div style={containerStyle}>
+<button style={buttonStyle} onClick={basicfunction} >Basic</button>
+      </div>
+      <div style={containerStyle}>
 
+<button style={buttonStyle2} onClick={amateurfunction}>Amateur</button>
+      </div>
+      <div style={containerStyle}>
+
+<button style={buttonStyle3} onClick={professionalfunction}>Professional</button>
+      </div>
+
+
+    </div>
+{/*
 <div  className='flex justify-center my-6 '>
 <div    className='px-12 py-4 '  style={styles} onClick={basicfunction} >Basic </div>
 <div    className='px-12 py-4'  style={styles2} onClick={amateurfunction}> Amateur</div>
@@ -333,6 +435,7 @@ Third Prize: 130$
 
 
 </div>
+      */}
 {Basic ? (
 
 <div class="mx-auto p-4 md:p-8 rounded-lg">
