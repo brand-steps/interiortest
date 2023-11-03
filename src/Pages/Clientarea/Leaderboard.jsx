@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './leaderboard.css';
 import img from '../../assets/img2.jpg'
 import Navbar from '../../Components/Navbar/Navbar';
-
+import axios from 'axios';
 
 const Leaderboard = () => {
+  
     const imageStyle = {
         width: '1100px',
         height: '600px',
@@ -21,6 +22,28 @@ const Leaderboard = () => {
         // background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
       };
 
+      const [products, setProducts] = useState([]);
+      const [productsBoolean, setProductsBoolean] = useState(false);
+      const [Delete , setdelete] = useState(false);
+
+      const getAllimages = async () => {
+        try {
+          const response = await axios.get(`http://localhost:8000/api/v1/Allimage`);
+          console.log("response: ", response);
+          console.log(products);
+          setProducts(response.data.data);
+        } catch (error) {
+          console.log("error in getting all products", error);
+        }
+      };
+
+      useEffect(() => {
+        console.log('asdasd')
+        getAllimages()
+        // return () => {
+        //   console.log('Cleanup Function');
+        //  }
+    }, [Delete , productsBoolean ])
 
   return (
     <>
@@ -32,10 +55,12 @@ const Leaderboard = () => {
 
     </div>
 <div className='flex  justify-evenly flex-wrap my-4'>
+{products.map((value) => (
       <div style={containerStyle}>
-      <img src={img} alt="Fairs" style={imageStyle} />
+      <img src={value.imageUrl} alt="Fairs" style={imageStyle} />
 
       </div>
+      ))}  
 
     </div>
 

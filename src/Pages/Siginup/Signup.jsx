@@ -9,6 +9,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 // import Awards from "../../Components/awards/Awards";
 import axios from 'axios';
 import Footer from "../../Components/Navbar/Home/Foooter/Footer";
+import RegisterNavbar from "../../Components/Navbar/RegisterNavbar";
 
 const Signup = () => {
 
@@ -86,7 +87,7 @@ const containerStyle2 = {
 
   return (
     <>
-    <Navbar/>
+    <RegisterNavbar/>
     <div className='flex  justify-evenly flex-wrap form-main'>
     <div style={containerStyle}>
       <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700" style={containerStyle2}>

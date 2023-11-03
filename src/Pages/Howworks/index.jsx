@@ -19,7 +19,7 @@ const Howwork = () => {
     padding: '20px',
     borderRadius: '8px',
     width: '1100px', // Adjust the width as needed
-    height: '600px'
+    marginBottom: '30px',
     // background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
   };
 

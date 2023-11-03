@@ -13,6 +13,12 @@ import BuyAmateur from "./Pages/Buypages/BuyAmateur";
 import BuyProfessional from "./Pages/Buypages/Buyprofessional";
 import Leaderboard from "./Pages/Clientarea/Leaderboard";
 import Addimage from "./Pages/Addimage/Addimage";
+import Addsignal from "./Pages/forexsignalgroup/Addsignalgroup/Addsignal";
+import SignalGroup from "./Pages/forexsignalgroup/SignalGroup";
+import Manager from "./Pages/AccountManager/Manager";
+import Addmanager from "./Pages/AccountManager/Addmanager/Addmanager";
+import Mentorships from "./Pages/Mentorships/Mentorship";
+import Addmentors from "./Pages/Mentorships/Addmentors/AddMentors";
 
 function App() {
   return (
@@ -31,6 +37,12 @@ function App() {
           <Route path={"/BuyProfessional"} element={<BuyProfessional />} />
           <Route path={"/Clientarea"} element={<Leaderboard />} />
           <Route path={"/Addimage"} element={<Addimage />} />
+          <Route path={"/Addsignalgroup"} element={<Addsignal />} />
+          <Route path={"/signalgroup"} element={<SignalGroup />} />
+          <Route path={"/accountmanager"} element={<Manager />} />
+          <Route path={"/Addaccountmanager"} element={<Addmanager />} />
+          <Route path={"/mentorship"} element={<Mentorships />} />
+          <Route path={"/addmentors"} element={<Addmentors />} />
 
         </Routes>
       </BrowserRouter>

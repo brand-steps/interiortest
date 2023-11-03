@@ -4,7 +4,6 @@ const SupportCardFifth = () => {
   return (
 <div className="flex flex-col md:flex-row justify-evenly">
   <div className="cardofContent w-full md:w-96 h-auto p-8 shadow-md mb-4 md:mb-0 md:mr-4" style={{ backgroundColor: "black" }}>
-    <img height="100" src="https://myforexfunds.com/wp-content/uploads/2023/07/More-than-a-refund.gif?w=600" alt="" />
     <div className="mt-4 text-center">
       <h1 className="text-white mt-3 md:mt-9 font-bold mb-4 text-md">◉  REGISTER</h1>
       <p style={{ color: "white" }} className="text-sm text-start">
@@ -28,7 +27,6 @@ const SupportCardFifth = () => {
   </div>
 
   <div className="cardofContent w-full md:w-96 h-auto p-8 shadow-md mb-4 md:mb-0 md:mr-4" style={{ backgroundColor: "black" }}>
-    <img height="100" src="https://myforexfunds.com/wp-content/uploads/2023/07/Earn-from-Phase-1.gif" alt="" />
     <div className="mt-4 text-center">
       <h1 className="text-white mt-3 md:mt-9 font-bold mb-4 text-md">◉  TRADE</h1>
       <p style={{ color: "white" }} className="text-sm">No trading Rules such As maximum daily or overall drawdown, just trade as you like but don't forget to Look into the leaderboard so you can decide your risk and reward accordingly</p>
@@ -36,7 +34,6 @@ const SupportCardFifth = () => {
   </div>
 
   <div className="cardofContent w-full md:w-96 h-auto p-8 shadow-md mb-4 md:mb-0 md:mr-4" style={{ backgroundColor: "black" }}>
-    <img height="100" src="https://myforexfunds.com/wp-content/uploads/2022/11/VIP-Reward-Program-1.gif" alt="" />
     <div className="mt-4 text-center">
       <h1 className="text-white mt-3 md:mt-9 font-bold mb-4 text-md">◉  Withdraw</h1>
       <p style={{ color: "white" }} className="text-sm">Once You Find your self in top 3 our representative with Email you For your withdrawal Request you just need to Sit back and enjoy, No Further Requirement such as KYC Just  Bank account Number and your Funds are ready To Go</p>

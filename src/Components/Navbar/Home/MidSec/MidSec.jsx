@@ -18,8 +18,9 @@ const MidSec = () => {
       >
         {/* <img className="w-full max-w-lg" src={bull} alt="" /> */}
         <p className="text-white TESTIMONIALS ">Your Capital, Your Pocket</p>
+        
         <h1
-          className="font-bold mid-para text-white"
+          className="font-bold mid-para my-3 text-white"
           style={{ fontSize: "30px" }}
         >
           World's First Forex Competition 30% Traders Are Profitable No Daily Or Maximum Drawdown

@@ -7,43 +7,17 @@ import "./Navbar.css";
 import logo from "../Images/My Forex Competition p-05.png";
 import flag from "../Images/united-kingdom.png";
 // import Example from "../../Pages/Siginup/Siginup";
-const Navbar = () => {
+const RegisterNavbar = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const [responce  , setResponce] = useState("")
+
   let [user, setUser] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(true);
-  const [dropdowns, setdropdowns] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  useEffect(() => {
-    const getProfile = async () => {
-      try {
-        let response = await axios.get(
-          `http://localhost:8000/api/v1/profile`,
-          {
-            withCredentials: true,
-            headers: {
-              "Cache-Control": "no-cache",
-              Pragma: "no-cache",
-              Expires: "0",
-            },
-          }
-        );
-
-        // console.log("response: ", response);
-        setResponce(response.data);
-        setUser(true);
-      } catch (error) {
-        console.log("axios error: ", error);
-      }
-    };
-    getProfile();
-  }, []);
 
   return (
     <div>
@@ -80,21 +54,17 @@ const Navbar = () => {
           }`}
           id="menu"
         >
-          <Link to="/">
-          <li className="border-t md:border-none mt-2 mr-4 text-white font-bold hover:text-blue-500 transition duration-300 ease-in-out">
-            
+                      <li className="border-t md:border-none mt-2 mr-4 text-white font-bold hover:text-blue-500 transition duration-300 ease-in-out">
+            <Link to="/">
               Home
               <i className="fa ml-2" aria-hidden="true"></i>
-            
+            </Link>
           </li>
-          </Link>
-
-          <Link to="/Howworks">
-          <li className="md:border-none mt-2 relative mr-4 text-white font-bold transition duration-300 ease-in-out" >
+          <li className="md:border-none mt-2 relative mr-4 text-white font-bold transition duration-300 ease-in-out">
+            <a href="/Howworks">
               How it works{" "}
-              {/*<i className="fa fa-caret-down ml-2" aria-hidden="true"></i>*/}
-            
-            {/*
+              <i className="fa fa-caret-down ml-2" aria-hidden="true"></i>
+            </a>
             <ul className="submenu absolute left-0 mt-2 bg-white shadow-lg rounded opacity-0 invisible transition-opacity duration-300 ease-in-out group-hover:opacity-100 group-hover:visible">
               <li className="py-2 px-4 hover:bg-gray-100">
                 <a href="/">Rapid</a>
@@ -106,34 +76,13 @@ const Navbar = () => {
                 <a href="/">Accelerated</a>
               </li>
             </ul>
-        */}
           </li>
-          </Link>
-          <Link to="/FAQ">
           <li className="border-t md:border-none mt-2 mr-4 text-white font-bold">
-            
+            <Link to="/FAQ">
               FAQ
               {/* FAQ <i className="fa fa-caret-down ml-2" aria-hidden="true"></i> */}
-            
+            </Link>
           </li>
-          </Link>
-          <Link to="/signalgroup">
-          <li className="border-t md:border-none mt-2 mr-4 text-white font-bold">
-            
-              Single Group
-              {/* FAQ <i className="fa fa-caret-down ml-2" aria-hidden="true"></i> */}
-            
-          </li>
-          </Link>
-          <Link to="/mentorship">
-          <li className="border-t md:border-none mt-2 mr-4 text-white font-bold">
-            
-              Mentorship
-              {/* FAQ <i className="fa fa-caret-down ml-2" aria-hidden="true"></i> */}
-          </li>
-          </Link>
-
-          
           {/* Testimonials 
           <li className="border-t md:border-none mt-2 mr-4 text-white font-bold hover:text-blue-500 transition duration-300 ease-in-out">
             <Link to="/Testimonials">
@@ -143,34 +92,29 @@ const Navbar = () => {
           </li>
         */}
           {/* Trading */}
-          <Link to="/Aboutus">
+
           <li className="border-t md:border-none mt-2 mr-4 text-white font-bold hover:text-blue-500 transition duration-300 ease-in-out">
+            <Link to="/Aboutus">
               About us
               <i className="fa fa-caret-down ml-2" aria-hidden="true"></i>
+            </Link>
           </li>
-          </Link>
+
           {/* Client Area */}
-          <Link to="/Clientarea">
           <li
             className="text-white font-bold hover:text-blue-500 "
             style={{ fontSize: "16px", color: "yellow" }}
           >
+            <Link to="/OurDocument">
               Client Area{" "}
               {/* <i className="fa fa-caret-down ml-2" aria-hidden="true"></i> */}
+            </Link>
           </li>
-          </Link>
-          <Link to="/accountmanager">
-          <li className="border-t md:border-none mt-2 mr-4 text-white font-bold">
-              Managers
-              {/* FAQ <i className="fa fa-caret-down ml-2" aria-hidden="true"></i> */}
-          </li>
-          </Link>
-
           {/* Contact */}
           {/* <li className="border-t md:border-none mt-2 mr-4 text-white font-bold hover:text-blue-500 transition duration-300 ease-in-out">
                         <Link to="/OurDocument">Contact <i className="fa fa-caret-down ml-2" aria-hidden="true"></i></Link>
                     </li> */}
-         {/*} <li className="mt-2 mr-4 text-white">
+          <li className="mt-2 mr-4 text-white">
             <span className="flex font-bold ">
               <img
                 className="mr-2"
@@ -181,32 +125,18 @@ const Navbar = () => {
               />
               EN
             </span>
-                  </li> */}
-
+          </li>
           {/* <button>Sign in</button> */}
           {/* <Example /> */}{" "}
-
-          {user ? (
-                   <Link to="/Signup">
-                   <button
-                     type="button"
-                     className="self-end text-black font-medium text-sm px-5 py-2.5 mr-2 focus:outline-none dark:focus:ring-blue-800  hover:text-white transition duration-300 ease-in-out bts"
-                     variant="primary"
-                   >
-                     Register
-                   </button>
-                 </Link>
-        ) :        
-        <Link to="/login">
-        <button
-          type="button"
-          className="self-end text-black font-medium text-sm px-5 py-2.5 mr-2 focus:outline-none dark:focus:ring-blue-800 hover:text-white transition duration-300 ease-in-out bts"
-          variant="primary"
-        >
-          Sign in
-        </button>
-      </Link>}
-
+          <Link to="/login">
+            <button
+              type="button"
+              className="self-end text-black font-medium text-sm px-5 py-2.5 mr-2 focus:outline-none dark:focus:ring-blue-800  hover:text-white transition duration-300 ease-in-out bts"
+              variant="primary"
+            >
+              Sign in
+            </button>
+          </Link>
           {/* <li className="border-t md:border-none mt-2 mr-4 text-white font-bold hover:text-blue-500 transition duration-300 ease-in-out">
                         <i className="fa fa-briefcase" aria-hidden="true"></i>
                     </li> */}
@@ -216,4 +146,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default RegisterNavbar;
