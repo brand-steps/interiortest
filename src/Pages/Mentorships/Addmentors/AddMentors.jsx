@@ -55,7 +55,7 @@ const containerStyle2 = {
  
     if (email && mentorname && mentorfee && socialmedia) {
       try {
-        const response = await axios.post('http://localhost:8000/addmentors', {
+        const response = await axios.post('https://lazy-cyan-cod-slip.cyclic.app/addmentors', {
           mentorname,
           email,
           mentorfee,

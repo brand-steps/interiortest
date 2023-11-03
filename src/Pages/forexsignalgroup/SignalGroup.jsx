@@ -36,7 +36,7 @@ const SignalGroup = () => {
   };
   const getAllProducts = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/v1/signalgroupdisplay`);
+      const response = await axios.get(`https://lazy-cyan-cod-slip.cyclic.app/api/v1/signalgroupdisplay`);
       console.log("response: ", response);
       console.log(products);
       setProducts(response.data.data);

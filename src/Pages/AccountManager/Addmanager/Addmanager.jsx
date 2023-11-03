@@ -62,7 +62,7 @@ const containerStyle2 = {
  
     if (email && groupname && whatsapp && experience && totalclients && paymentoption) {
       try {
-        const response = await axios.post('http://localhost:8000/accountmanager', {
+        const response = await axios.post('https://lazy-cyan-cod-slip.cyclic.app/accountmanager', {
           groupname,
           email,
           whatsapp,

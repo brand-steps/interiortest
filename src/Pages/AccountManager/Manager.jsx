@@ -36,7 +36,7 @@ const Manager = () => {
   };
   const getAllProducts = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/v1/accountmanagerdisplay`);
+      const response = await axios.get(`https://lazy-cyan-cod-slip.cyclic.app/api/v1/accountmanagerdisplay`);
       console.log("response: ", response);
       console.log(products);
       setProducts(response.data.data);

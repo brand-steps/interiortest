@@ -28,7 +28,7 @@ const Leaderboard = () => {
 
       const getAllimages = async () => {
         try {
-          const response = await axios.get(`http://localhost:8000/api/v1/Allimage`);
+          const response = await axios.get(`https://lazy-cyan-cod-slip.cyclic.app/api/v1/Allimage`);
           console.log("response: ", response);
           console.log(products);
           setProducts(response.data.data);

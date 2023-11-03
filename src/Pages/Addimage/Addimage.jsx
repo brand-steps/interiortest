@@ -49,7 +49,7 @@ const buttonStyle = {
 
       const getAllimages = async () => {
         try {
-          const response = await axios.get(`http://localhost:8000/api/v1/Allimage`);
+          const response = await axios.get(`https://lazy-cyan-cod-slip.cyclic.app/api/v1/Allimage`);
           console.log("response: ", response);
           console.log(products);
           setProducts(response.data.data);
@@ -59,7 +59,7 @@ const buttonStyle = {
       };
       const deleteData = async (id)=>{
         try {
-          const response = await axios.delete(`http://localhost:8000/api/v1/imagereq/${id}`)
+          const response = await axios.delete(`https://lazy-cyan-cod-slip.cyclic.app/api/v1/imagereq/${id}`)
           console.log("response: ", response.data);
           setdelete(!Delete)
         } catch (error) {
@@ -85,7 +85,7 @@ const buttonStyle = {
           alert('image Added Suceesfully ')
           window.location.reload(false);
 
-          const response = await axios.post('http://localhost:8000/api/v1/Addimage', formData, {
+          const response = await axios.post('https://lazy-cyan-cod-slip.cyclic.app/api/v1/Addimage', formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },

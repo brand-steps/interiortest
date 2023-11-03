@@ -86,7 +86,7 @@ useEffect(() => {
 
   const getProfile = async () => {
     try {
-      let response = await axios.get(`http://localhost:8000/api/v1/profile`,
+      let response = await axios.get(`https://lazy-cyan-cod-slip.cyclic.app/api/v1/profile`,
         {
           withCredentials: true,
           headers: {

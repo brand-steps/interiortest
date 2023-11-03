@@ -44,7 +44,7 @@ const Mentorships = () => {
   };
   const getAllProducts = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/v1/mentordisplay`);
+      const response = await axios.get(`https://lazy-cyan-cod-slip.cyclic.app/api/v1/mentordisplay`);
       console.log("response: ", response);
       console.log(products);
       setProducts(response.data.data);

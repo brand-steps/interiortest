@@ -57,7 +57,7 @@ const containerStyle2 = {
  
     if (email && phone && country && password ) {
       try {
-        const response = await axios.post('http://localhost:8000/signup', {
+        const response = await axios.post('https://lazy-cyan-cod-slip.cyclic.app/signup', {
           username,
           email,
           phone,

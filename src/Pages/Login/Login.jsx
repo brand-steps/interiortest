@@ -11,7 +11,7 @@ import Footer from "../../Components/Navbar/Home/Foooter/Footer";
 
 // import Awards from "../../Components/awards/Awards";
 const Login = () => {
-
+let nets = "https://lazy-cyan-cod-slip.cyclic.ap p"
   const navigate = useNavigate();
   const [email, setemail] = useState()
   const [password, setPassword] = useState()
@@ -51,7 +51,7 @@ const Login = () => {
     // https://glorious-hat-bat.cyclic.app      // old url
     else {
       try {
-        let response = await axios.post(`http://localhost:8000/login`, {
+        let response = await axios.post(`https://lazy-cyan-cod-slip.cyclic.app/login`, {
           email: email,
           password: password
         }, {
