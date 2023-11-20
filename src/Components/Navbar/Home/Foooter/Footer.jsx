@@ -13,12 +13,19 @@ const Footer = () => {
           Find us on any of these platforms, we respond 1-2 business days.
         </h5> */}
         <div class="mt-6 lg:mb-0 mb-6">
+          <a href="https://instagram.com/myforexcompetition?igshid=NGVhN2U2NjQ0Yg==" target='_blank'>
           <button style={{"backgroundColor" : "red"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-twitter"></i></button><button  style={{"backgroundColor" : "red"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-facebook-square"></i></button><button style={{"backgroundColor" : "red"}}  class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-whatsapp"></i></button><button  style={{"backgroundColor" : "red"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i></button>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61552614137431&mibextid=9R9pXO" target='_blank'>
+            <button style={{"backgroundColor" : "red"}} class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-facebook-square"></i></button>
+            </a>
+            <a href="">
+            <button style={{"backgroundColor" : "red"}}  class=" text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-discord"></i>
           </button>
+          </a>
         </div>
       </div>
       <div class="w-full lg:w-6/12 px-4">

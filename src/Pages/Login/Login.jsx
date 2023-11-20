@@ -73,7 +73,7 @@ let nets = "https://lazy-cyan-cod-slip.cyclic.ap p"
     <>
     <LoginNavbar/>
 
-    <div className='flex  justify-evenly flex-wrap  form-main'>
+    <div className='flex  justify-evenly flex-wrap  form-mains'>
       <div style={containerStyle}>
       <img src={laptop} alt="laptop" />
 

@@ -551,9 +551,9 @@ Entry Fees: 99$
         </tr>
         <tr class="border">
           <td style={{"backgroundColor" : "rgb(220 38 38)"}}  class="border p-6 text-center text-white  ">Winning Prize</td>
-          <td class="border p-2 text-center">1st: $270</td>
+          <td class="border p-2 text-center">1st: $250</td>
           <td class="border p-2 text-center">2nd: $100</td>
-          <td class="border p-2 text-center">3rd: $70</td>
+          <td class="border p-2 text-center">3rd: $75</td>
         </tr>
         <tr class="border">
             
@@ -613,9 +613,9 @@ Entry Fees: 99$
         </tr>
         <tr class="border">
           <td style={{"backgroundColor" : "rgb(220 38 38)"}}  class="border p-6 text-center text-white  ">Winning Prize</td>
-          <td class="border p-2 text-center">1st: $600</td>
+          <td class="border p-2 text-center">1st: $500</td>
           <td class="border p-2 text-center">2nd: $200</td>
-          <td class="border p-2 text-center">3rd: $125</td>
+          <td class="border p-2 text-center">3rd: $130</td>
         </tr>
         <tr class="border">
             

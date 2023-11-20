@@ -120,7 +120,7 @@ const Navbar = () => {
           <Link to="/signalgroup">
           <li className="border-t md:border-none mt-2 mr-4 text-white font-bold">
             
-              Single Group
+              Singnal Group
               {/* FAQ <i className="fa fa-caret-down ml-2" aria-hidden="true"></i> */}
             
           </li>
@@ -146,7 +146,6 @@ const Navbar = () => {
           <Link to="/Aboutus">
           <li className="border-t md:border-none mt-2 mr-4 text-white font-bold hover:text-blue-500 transition duration-300 ease-in-out">
               About us
-              <i className="fa fa-caret-down ml-2" aria-hidden="true"></i>
           </li>
           </Link>
           {/* Client Area */}

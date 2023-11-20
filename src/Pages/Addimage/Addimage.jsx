@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import imgs from '../../assets/img2.jpg'
 const Addimage = () => {
 const navigate = useNavigate();
-
+let backendlink = "https://lazy-cyan-cod-slip.cyclic.ap p"
 const containerStyle = {
   display: 'flex',
   flexDirection: 'column',
@@ -85,7 +85,7 @@ const buttonStyle = {
           alert('image Added Suceesfully ')
           window.location.reload(false);
 
-          const response = await axios.post('https://lazy-cyan-cod-slip.cyclic.app/api/v1/Addimage', formData, {
+          const response = await axios.post('https://lazy-cyan-cod-slip.cyclic.app/Addimage', formData, {
             headers: {
               'Content-Type': 'multipart/form-data',
             },
@@ -110,7 +110,7 @@ const buttonStyle = {
   return (
     <>
       <div className='rootcontainer'>
-    <h3 className='Heading'>Your Personal Details</h3>
+    <h3 className='Heading'>Add image</h3>
     <TextField fullWidth name="image" onChange={handleFileChange} type='file'  variant="outlined" />
         <Button fullWidth onClick={handleUpload} variant="contained">Upload</Button>
 </div>

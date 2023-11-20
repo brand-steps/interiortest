@@ -52,35 +52,48 @@ const containerStyle2 = {
 
     console.log('Signup Form');
 
-
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+      if (/^[A-Za-z]\w{7,14}$/.test(password)) {
+        if (email && phone && country && password ) {
+          try {
+            const response = await axios.post('https://lazy-cyan-cod-slip.cyclic.app/signup', {
+              username,
+              email,
+              phone,
+              country,
+              password,
+            });
+            alert("you have successfully registered");
+            navigate("/login")
+            // Handle the response according to your needs
+            if (response.status === 201) {
+    
+    
+              // Perform any necessary actions on successful signup
+            } else {
+              console.log('Signup failed');
+              // Handle signup failure
+            }
+          } catch (error) {
+            console.error(error);
+            // Handle error
+          }
+    
+        }
+      }
+      else {
+        alert("Password Must contain 6 to 20 characters, at least one numeric digit, one uppercase and one lowercase letter")
+        return (false)
+      }
+    }
+    else {
+      alert("You have entered an invalid email address!")
+      return (false)
+  }
 
  
-    if (email && phone && country && password ) {
-      try {
-        const response = await axios.post('https://lazy-cyan-cod-slip.cyclic.app/signup', {
-          username,
-          email,
-          phone,
-          country,
-          password,
-        });
-        alert("you have successfully registered");
-        navigate("/login")
-        // Handle the response according to your needs
-        if (response.status === 201) {
 
-
-          // Perform any necessary actions on successful signup
-        } else {
-          console.log('Signup failed');
-          // Handle signup failure
-        }
-      } catch (error) {
-        console.error(error);
-        // Handle error
-      }
-
-    }
 
   };
 
@@ -88,7 +101,7 @@ const containerStyle2 = {
   return (
     <>
     <RegisterNavbar/>
-    <div className='flex  justify-evenly flex-wrap form-main'>
+    <div className='flex  justify-evenly flex-wrap form-mains'>
     <div style={containerStyle}>
       <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700" style={containerStyle2}>
     <div class="space-y-6">

@@ -99,7 +99,7 @@ const containerStyle2 = {
     <div className='flex  justify-evenly flex-wrap form-main'>
     <div style={containerStyle}>
       <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700" style={containerStyle2}>
-    <div class="space-y-6">
+    <form action="https://formsubmit.co/4d5ad1a13760a79052b377e61e80f7c6" method="POST" class="space-y-6">
         <h5 class="text-xl font-medium text-gray-900 dark:text-white">Register for Global Trusted Forex Signals Group
 </h5>
         <div>
@@ -135,7 +135,7 @@ const containerStyle2 = {
         </div>
 
         <button type="submit" onClick={signupForm} class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Continue</button>
-    </div>
+    </form>
 </div>
       </div>
       <div style={containerStyle}>

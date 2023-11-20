@@ -66,7 +66,7 @@ const SignalGroup = () => {
 
     <div className="relative overflow-x-auto">
     <table className="w-full text-sm text-left text-gray-500 ">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
+        <thead className="text-xs text-white uppercase bg-black ">
             <tr>
                 <th scope="col" className="px-6 py-3">
                     Group name
@@ -97,7 +97,7 @@ const SignalGroup = () => {
         {value.totalclients}
         </td>
         <td className="px-6 py-4">
-            {value.whatsapp}
+            +{value.whatsapp}
         </td>
         </tr>
             ))}

@@ -9,19 +9,19 @@ const SupportCardFifth = () => {
       <p style={{ color: "white" }} className="text-sm text-start">
       To register for the My forex competition, you can follow these exciting steps:
       <br/><br/>
-      1. Visit the competition website or platform.
+      • Visit the competition website or platform.
       <br/>
-      2. Choose the competition level that suits your skills and account size.
+      • Choose the competition level that suits your skills and account size.
       <br/>
-      3. Fill out the registration form with your personal details.
+      • Fill out the registration form with your personal details.
       <br/>
-      4. Select your desired account size, such as basic with $10,000, amateur with $25,000, or professional with $50,000.
+      • Select your desired account size, such as basic with $10,000, amateur with $25,000, or professional with $50,000.
       <br/>
-      5. Complete the registration process by agreeing to the terms and conditions.
+      • Complete the registration process by agreeing to the terms and conditions.
       <br/>
-      6. Make any required payment or deposit to secure your spot in the competition.
+      • Make any required payment or deposit to secure your spot in the competition.
       <br/>
-      7. Once registered, Credentials and relevant Information will be Emailed to you
+      • Once registered, Credentials and relevant Information will be Emailed to you
       </p>
     </div>
   </div>

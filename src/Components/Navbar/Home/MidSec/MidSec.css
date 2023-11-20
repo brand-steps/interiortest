@@ -1,5 +1,6 @@
 .TESTIMONIALS {
-  color: #3ee8ff;
+ /* color: #3ee8ff;*/
+ color: #ffd700;
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
@@ -15,7 +16,7 @@
 }
 .mid-para{
     width: 60vw;
-    margin-left: 30px;
+    margin-left: 43px;
     font-size: 2rem;
     /* margin-bottom: 400px; */
 }
