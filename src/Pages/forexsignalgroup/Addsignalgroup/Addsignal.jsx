@@ -22,8 +22,18 @@ const Addsignal = () => {
   const [totalclients , settotalclients] = useState();
   const [paymentoption , setpaymentoption] = useState();
   const [paymentoptionerror , setpaymentoptionerror] = useState();
+  const [packages  , setpackages] = useState("Signal Group")
 
-
+  const handlepayment = () => {
+    axios.post(`https://lazy-cyan-cod-slip.cyclic.app/create-checkout-session`, {
+      packages,
+      price: paymentoption
+    }).then((res) => {
+      if (res.data.url) {
+        window.location.href = res.data.url
+      }
+    }).catch((err)=> {console.log(err.message)})
+  }
 const navigate = useNavigate();
 const imageStyle = {
   width: '550px',
@@ -72,7 +82,7 @@ const containerStyle2 = {
           paymentoption,
         });
 //        alert("you have successfully registered for Global trusted signal group");
-        navigate("/login")
+
         // Handle the response according to your needs
         if (response.status === 201) {
 
@@ -127,14 +137,14 @@ const containerStyle2 = {
 
             <select id="category" name='category' onChange={(e) => {setpaymentoption(e.target.value);}} className=" border text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 0   ">
         <option>Select a package</option>
-        <option value="$49/monthly" >Option1: $49/monthly</option>
-        <option value="$199/half yealy">Option2: $199/half yealy</option>
-        <option value="$399/yealy">Option3: $399/yealy</option>
+        <option value="49" >Option1: $49/monthly</option>
+        <option value="199">Option2: $199/half yealy</option>
+        <option value="399">Option3: $399/yealy</option>
 
 </select>
         </div>
 
-        <button type="submit" onClick={signupForm} class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Continue</button>
+        <button type="submit" onClick={()=> {signupForm(); handlepayment()}} class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Continue</button>
     </form>
 </div>
       </div>

@@ -19,6 +19,8 @@ import Manager from "./Pages/AccountManager/Manager";
 import Addmanager from "./Pages/AccountManager/Addmanager/Addmanager";
 import Mentorships from "./Pages/Mentorships/Mentorship";
 import Addmentors from "./Pages/Mentorships/Addmentors/AddMentors";
+import Success from "./Pages/Afterpayment/Success";
+import Cancel from "./Pages/Afterpayment/Cancel";
 
 function App() {
   return (
@@ -43,7 +45,8 @@ function App() {
           <Route path={"/Addaccountmanager"} element={<Addmanager />} />
           <Route path={"/mentorship"} element={<Mentorships />} />
           <Route path={"/addmentors"} element={<Addmentors />} />
-
+          <Route path={"/success"} element={<Success />} />
+          <Route path={"/cancel"} element={<Cancel />} />
         </Routes>
       </BrowserRouter>
     </div>

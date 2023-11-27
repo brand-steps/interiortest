@@ -7,7 +7,20 @@ const BuyAmateur = () => {
 
 
 const [responce  , setResponce] = useState("")
+const [price  , setprice] = useState("49")
+const [packages  , setpackages] = useState("Amateur Package")
 
+const handlepayment = () => {
+  axios.post(`https://lazy-cyan-cod-slip.cyclic.app/create-checkout-session`, {
+    responce,
+    packages,
+    price
+  }).then((res) => {
+    if (res.data.url) {
+      window.location.href = res.data.url
+    }
+  }).catch((err)=> {console.log(err.message)})
+}
 
     useEffect(() => {
 
@@ -71,7 +84,7 @@ const [responce  , setResponce] = useState("")
 </div>
     <br/><br/><br/><br/><br/><br/>
     <div  >
-    <button style={{ backgroundColor: "rgb(153 27 27)" }} type='submit' className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out  ">
+    <button onClick={handlepayment} style={{ backgroundColor: "rgb(153 27 27)" }} type='submit' className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out  ">
         Buy Now
       </button>
       </div>

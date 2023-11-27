@@ -7,8 +7,20 @@ const BuyProfessional = () => {
 
 
 const [responce  , setResponce] = useState("")
+const [price  , setprice] = useState("99")
+const [packages  , setpackages] = useState("Professional Package")
 
-
+const handlepayment = () => {
+  axios.post(`https://lazy-cyan-cod-slip.cyclic.app/create-checkout-session`, {
+    responce,
+    packages,
+    price
+  }).then((res) => {
+    if (res.data.url) {
+      window.location.href = res.data.url
+    }
+  }).catch((err)=> {console.log(err.message)})
+}
     useEffect(() => {
 
         const getProfile = async () => {
@@ -73,7 +85,7 @@ const [responce  , setResponce] = useState("")
 
     <br/><br/><br/><br/><br/><br/>
     <div >
-    <button style={{ backgroundColor: "rgb(153 27 27)" }} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out  ">
+    <button onClick={handlepayment} style={{ backgroundColor: "rgb(153 27 27)" }} className="text-white font-bold px-9  py-4 transition duration-300 ease-in-out  ">
         Buy Now
       </button>
       </div>

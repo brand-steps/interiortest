@@ -21,6 +21,7 @@ const Addmanager = () => {
   const [totalclients , settotalclients] = useState();
   const [paymentoption , setpaymentoption] = useState();
   const [paymentoptionerror , setpaymentoptionerror] = useState();
+  const [packages  , setpackages] = useState("Manager Package")
 
 
 const navigate = useNavigate();
@@ -49,6 +50,16 @@ const containerStyle2 = {
   width: '300px', // Adjust the width as needed
   // background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
 };
+const handlepayment = () => {
+  axios.post(`https://lazy-cyan-cod-slip.cyclic.app/create-checkout-session`, {
+    packages,
+    price: paymentoption
+  }).then((res) => {
+    if (res.data.url) {
+      window.location.href = res.data.url
+    }
+  }).catch((err)=> {console.log(err.message)})
+}
   const signupForm = async () => {
 
 
@@ -126,14 +137,14 @@ const containerStyle2 = {
 
             <select id="category" name='category' onChange={(e) => {setpaymentoption(e.target.value);}} className=" border text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 0   ">
         <option>Select a package</option>
-        <option value="$99/monthly" >Option1: $99/monthly</option>
-        <option value="$399/half yearly">Option2: $399/half yearly</option>
-        <option value="799/yearly">Option3: 799/yearly</option>
+        <option value="99" >Option1: $99/monthly</option>
+        <option value="399">Option2: $399/half yearly</option>
+        <option value="799">Option3: 799/yearly</option>
 
 </select>
         </div>
 
-        <button type="submit" onClick={signupForm} class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Continue</button>
+        <button type="submit" onClick={()=> {signupForm(); handlepayment()}} class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Continue</button>
     </form>
 </div>
       </div>
