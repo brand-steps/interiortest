@@ -1,3 +1,4 @@
+import About from "./Pages/About/About";
 import ArchitectDetails from "./Pages/Detailpage/ArchitectureDetails/ArchitectDetails";
 import ExteriorDetails from "./Pages/Detailpage/Exteriordetails/ExteriorDetails";
 import FurnitureDetails from "./Pages/Detailpage/Furnituredetail/FurnitureDetails";
@@ -22,6 +23,7 @@ function App() {
           <Route path={"/Landscapingdetails"} element={<LandscapingDetails />} />
           <Route path={"/Studiodetails"} element={<StudioDetails />} />
           <Route path={"/Album"} element={<Gallery />} />
+          <Route path={"/About"} element={<About />} />
 
 
         </Routes>

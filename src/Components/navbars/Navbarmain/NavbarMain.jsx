@@ -41,7 +41,7 @@ const NavbarMain = () => {
           Home
         </Navbar.Link>
         </Link>
-        <Link to={"/listings"}>
+        <Link to={"/About"}>
         <Navbar.Link  className='text-lg divhead text-black '> About Us</Navbar.Link> </Link>
 
        
