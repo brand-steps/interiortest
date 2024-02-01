@@ -18,7 +18,7 @@ const divStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundImage: "url('https://i.pinimg.com/736x/8e/96/5e/8e965eccc96a868ddfd0bf77b365f168.jpg')",
-    width: '380px', // Adjust the width as needed
+    width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -31,7 +31,7 @@ const divStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundImage: "url('https://i.pinimg.com/736x/64/41/b9/6441b994edbd71f2754c17fb733af948.jpg')",
-    width: '380px', // Adjust the width as needed
+    width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -44,7 +44,7 @@ const divStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundImage: "url('https://img.freepik.com/premium-photo/modern-house-exterior-with-garage-design-dark-gray-color_124507-22179.jpg')",
-    width: '380px', // Adjust the width as needed
+    width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -57,7 +57,7 @@ const divStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundImage: "url('https://img.freepik.com/premium-photo/dark-living-room-interior-design-with-sofa-plant-3d-rendering-background_517102-221.jpg')",
-    width: '380px', // Adjust the width as needed
+    width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -70,7 +70,7 @@ const divStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundImage: "url('https://dhb3yazwboecu.cloudfront.net/1384/home/Home_Kubik_slide_1000x947.webp')",
-    width: '380px', // Adjust the width as needed
+    width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -83,7 +83,7 @@ const divStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundImage: "url('https://img.pikbest.com/ai/illus_our/20230428/9c9d8d8ac74298b98d5981dadda1ce62.jpg!w700wp')",
-    width: '380px', // Adjust the width as needed
+    width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
