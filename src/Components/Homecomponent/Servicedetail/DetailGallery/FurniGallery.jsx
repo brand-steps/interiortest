@@ -1,12 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Dialog from '@mui/material/Dialog';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
+import axios from 'axios';
 
 
 const FurniGallery = () => {
 const [hover, sethover] = useState(false)
 const [open, setOpen] = React.useState(false);
+const [products, setProducts] = useState([]);
+const [productsBoolean, setProductsBoolean] = useState(false);
+const [Delete , setdelete] = useState(false);
+
+const getAllProducts = async () => {
+  try {
+    const response = await axios.get(`http://localhost:8000/furniimage`);
+    console.log("response: ", response);
+    console.log(products);
+    setProducts(response.data.data);
+  } catch (error) {
+    console.log("error in getting all requests", error);
+  }
+};
+useEffect(() => {
+  getAllProducts()
+
+}, [Delete , productsBoolean ])
 
 const handleClickOpen = () => {
     setOpen(true);
@@ -53,9 +72,12 @@ const divStyle = {
      Content for the inner div 
   </div>*/}
 </div>
-    <div className='flex  justify-evenly  flex-wrap my-4 pt-12 py-16' >
-    <div onClick={handleClickOpen} style={containerStyle} className=' hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
-    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" alt="img" style={imageStyle} />
+<div className='flex  justify-evenly  flex-wrap my-4 pt-12 py-16' >
+
+{products.map((value) => (
+  <>
+<div onClick={handleClickOpen} style={containerStyle} className=' hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
+    <img src={value.imageUrl} alt="img" style={imageStyle} />
 </div>
 <Dialog
         fullScreen
@@ -75,28 +97,14 @@ const divStyle = {
 
 
           </Toolbar>
-          <img className='h-full w-full' src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" alt="img" />
+          <img className='h-full w-full' src={value.imageUrl} alt="img" />
 
 
       </Dialog>
-<div style={containerStyle} className=' hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
-    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" alt="img" style={imageStyle} />
-</div>
-<div style={containerStyle} className=' hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
-    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" alt="img" style={imageStyle} />
-</div>
-<div style={containerStyle} className=' hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
-    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" alt="img" style={imageStyle} />
-</div>
+</>
 
-<div style={containerStyle} className=' hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
-    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" alt="img" style={imageStyle} />
-</div>
-<div style={containerStyle} className=' hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
-    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D" alt="img" style={imageStyle} />
-</div>
-
-      </div>
+          ))}
+          </div>
       </div>
     </>
   );

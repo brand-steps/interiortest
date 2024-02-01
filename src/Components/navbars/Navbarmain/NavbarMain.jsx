@@ -2,18 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Avatar, Dropdown, Navbar } from 'flowbite-react';
 import { Link, useNavigate } from 'react-router-dom';
 import NavContact from '../Navcontact/NavContact';
-
+import logo from '../../../Assets/intlogo.png'
 const NavbarMain = () => {
-  const navigate = useNavigate();
-  const [email, setemail] = useState()
-  const [password, setPassword] = useState()
-  const [errorMessage, setErrorMessage] = useState('');
-  const [emailError, setEmailError] = useState(false);
-  const [openDialog, setOpenDialog] = useState(false);
-  let [customeruser, setcustomeruser] = useState(false);
-  let [customerresponse, setcustomerresponse] = useState("");
-  let [customerbring, setcustomerbring] = useState(false);
-  let [packagename, setpackagename] = useState();
+
 
   const [login, setlogin] = useState(false)
 
@@ -26,7 +17,7 @@ const NavbarMain = () => {
       <NavContact/>
       <Navbar fluid rounded className='bg-white dark:bg-white'>
       <Navbar.Brand href="https://listit.pk">
-        <img src="https://alvinter.com/wp-content/uploads/2020/10/Alvinter-Port-Equipment-Spare-Parts-logo-400x150-1.jpg" className="mr-3 h-16 sm:h-20" alt="Flowbite React Logo" />
+        <img src={logo} className="mr-3 h-16 sm:h-20" alt="Flowbite React Logo" />
       </Navbar.Brand>
       <div className="flex md:order-2">
 

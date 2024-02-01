@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavbarMain from '../../Components/navbars/Navbarmain/NavbarMain';
 import HeadBar from '../../Components/navbars/Headbar/HeadBar';
 import OfficialGallery from '../../Components/Homecomponent/Servicedetail/DetailGallery/OfficialGallery';
 import FooterBar from '../../Components/Footer/FooterBar';
 
 const Gallery = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div>

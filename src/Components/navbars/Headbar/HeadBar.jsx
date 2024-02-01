@@ -25,7 +25,7 @@ const HeadBar = (props) => {
   return (
     <div className='flex  justify-evenly flex-wrap my-4 opacity-90' style={divStyle}>
       <div style={containerStyle}>
-        <h1 className="text-7xl text-white font-extrabold opacity-100">{props.name}</h1>
+        <h1 className="text-3xl sm:text-7xl text-white font-extrabold opacity-100">{props.name}</h1>
 
       </div>
 

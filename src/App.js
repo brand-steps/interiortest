@@ -1,4 +1,5 @@
 import About from "./Pages/About/About";
+import AddImage from "./Pages/AddImage/AddImage";
 import ArchitectDetails from "./Pages/Detailpage/ArchitectureDetails/ArchitectDetails";
 import ExteriorDetails from "./Pages/Detailpage/Exteriordetails/ExteriorDetails";
 import FurnitureDetails from "./Pages/Detailpage/Furnituredetail/FurnitureDetails";
@@ -7,6 +8,7 @@ import LandscapingDetails from "./Pages/Detailpage/Landscapedetail/LandscapingDe
 import StudioDetails from "./Pages/Detailpage/Studiodetail/StudioDetails";
 import Gallery from "./Pages/Gallery/Gallery";
 import Home from "./Pages/Home/Home";
+import ManageImages from "./Pages/Manageimages/ManageImages";
 import logo from "./logo.svg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -24,6 +26,8 @@ function App() {
           <Route path={"/Studiodetails"} element={<StudioDetails />} />
           <Route path={"/Album"} element={<Gallery />} />
           <Route path={"/About"} element={<About />} />
+          <Route path={"/Addsimage"} element={<AddImage />} />
+          <Route path={"/manageimage"} element={<ManageImages />} />
 
 
         </Routes>
