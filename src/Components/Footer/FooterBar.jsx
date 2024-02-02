@@ -19,20 +19,44 @@ function FooterBar() {
   /> */}
           </div>
           
-          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6 ">
+          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-4 sm:gap-6 ">
  
+          <div>
+              <Footer.Title title="Services" className='text-white'/>
+              <Footer.LinkGroup col>
+                <Link to={'/interiordesign'}>
+                <Footer.Link className='text-white'>Interior Design</Footer.Link>
+                </Link>
+                <Link to={'/exteriordetails'}>
+                <Footer.Link className='text-white'>Exterior Design</Footer.Link>
+                </Link>
+                <Link to={'/Architecturedetails'}>
+                <Footer.Link className='text-white'>Construction</Footer.Link>
+                </Link>
+                <Link to={'/Furnituredetails'}>
+                <Footer.Link className='text-white'>Furniture</Footer.Link>
+                </Link>
+                <Link to={'/Landscapingdetails'}>
+                <Footer.Link className='text-white'>Gardening</Footer.Link>
+                </Link>
+                <Link to={'/Studiodetails'}>
+                <Footer.Link className='text-white'>3D Studio</Footer.Link>
+                </Link>
+              </Footer.LinkGroup>
+            </div>
+
 
             <div>
               <Footer.Title title="about" className='text-white'/>
               <Footer.LinkGroup col>
-                <Link to={'/aboutus'}>
+                <Link to={'/About'}>
                 <Footer.Link className='text-white'>About Us</Footer.Link>
                 </Link>
                 <Link to={'/'}>
                 <Footer.Link className='text-white'>Home</Footer.Link>
                 </Link>
-                <Link to={'/pricing'}>
-                <Footer.Link className='text-white'>Pricing</Footer.Link>
+                <Link to={'/Album'}>
+                <Footer.Link className='text-white'>Gallery</Footer.Link>
                 </Link>
               </Footer.LinkGroup>
             </div>
@@ -70,7 +94,7 @@ function FooterBar() {
 <Footer.Icon href="#" icon={BsDribbble} className='headcolors'/> 
         <img src={insta} className="mr-3 inline h-7 " alt="Flowbite React Logo" />
         <img src={phone} className="mr-3 inline h-7 " alt="Flowbite React Logo" /> */}
-       <a href="https://www.facebook.com/profile.php?id=61554996643658" target='_blank'> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" className="mr-3 inline h-7 " alt="Facebook logo" /></a>
+       <a href="https://www.facebook.com/MODERNDESIGNFURNISHERS9/" target='_blank'> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" className="mr-3 inline h-7 " alt="Facebook logo" /></a>
 
 
           </div>

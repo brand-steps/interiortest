@@ -2,13 +2,6 @@ import React from 'react';
 
 const Section1 = () => {
 
-
-
-  const divStyle = {
-    backgroundImage: "url('https://www.osimo.com.tr/assets/images/media-bg.jpg')",
-    /* Other styles you might want to apply */
-  };
-
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -22,8 +15,6 @@ const Section1 = () => {
     height: '700px',
     marginBottom: '16px',
   };
-
-
 
   return (
     <div className='flex  justify-evenly flex-wrap my-12'>
