@@ -20,7 +20,6 @@ function FooterBar() {
           </div>
           
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-4 sm:gap-6 ">
- 
           <div>
               <Footer.Title title="Services" className='text-white'/>
               <Footer.LinkGroup col>
@@ -44,8 +43,6 @@ function FooterBar() {
                 </Link>
               </Footer.LinkGroup>
             </div>
-
-
             <div>
               <Footer.Title title="about" className='text-white'/>
               <Footer.LinkGroup col>
@@ -60,7 +57,6 @@ function FooterBar() {
                 </Link>
               </Footer.LinkGroup>
             </div>
-
             <div>
               <Footer.Title title="Follow us" className='text-white'/>
               <Footer.LinkGroup col>
@@ -95,8 +91,6 @@ function FooterBar() {
         <img src={insta} className="mr-3 inline h-7 " alt="Flowbite React Logo" />
         <img src={phone} className="mr-3 inline h-7 " alt="Flowbite React Logo" /> */}
        <a href="https://www.facebook.com/MODERNDESIGNFURNISHERS9/" target='_blank'> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" className="mr-3 inline h-7 " alt="Facebook logo" /></a>
-
-
           </div>
         </div>
       </div>

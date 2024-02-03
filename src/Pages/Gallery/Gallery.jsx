@@ -5,7 +5,6 @@ import OfficialGallery from '../../Components/Homecomponent/Servicedetail/Detail
 import FooterBar from '../../Components/Footer/FooterBar';
 
 const Gallery = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])

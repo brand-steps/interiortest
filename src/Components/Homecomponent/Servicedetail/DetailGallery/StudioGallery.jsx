@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Dialog from '@mui/material/Dialog';
-
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import axios from 'axios';
-
 
 const StudioGallery = () => {
 const [hover, sethover] = useState(false)
@@ -30,16 +28,8 @@ useEffect(() => {
 const handleClickOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
-  };
-const divStyle = {
-  backgroundImage: `url('https://foyr.com/learn/wp-content/uploads/2021/10/rules-for-interior-designers.png')`,
-  /* Other styles you might want to apply */
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundAttachment: "fixed"
   };
 
   const containerStyle = {

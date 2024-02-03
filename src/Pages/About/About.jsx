@@ -5,38 +5,12 @@ import HeadBar from "../../Components/navbars/Headbar/HeadBar";
 import AboutChoose from "../../Components/Aboutcomponent/Aboutchoose";
 
 const About = () => {
- 
-    
-      const containerStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '20px',
-        width: '1000px', // Adjust the width as needed
-        
-        paddingBottom: '50px',
-        paddingTop: '50px'
-
-        //height: '250px', background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
-      };
     
       const imageStyle = {
         width: '500px',
         height: '400px',
         marginBottom: '16px',
       };
-    
-      const buttonStyle = {
-        background: '#EC0C36',
-        color: 'white',
-        fontWeight: 'bold',
-        padding: '8px 16px',
-        borderRadius: '8px',
-        marginTop: '12px',
-        cursor: 'pointer',
-      };
-
       const containerStyle2 = {
         display: 'flex',
         flexDirection: 'column',

@@ -3,19 +3,13 @@ import { Link } from 'react-router-dom';
 const AboutChoose = () => {
 const [hover, sethover] = useState(false)
 
-
 const divStyle = {
   backgroundImage: `url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ba4993108388437.5fbcd121e9065.jpg')`,
-  /* Other styles you might want to apply */
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundAttachment: "fixed"
   };
 
-  const divStyleimage = {
-    backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZNMdSv1SKgloyVeqRrTk7ksR8hE0juNJpTg&usqp=CAU')",
-    /* Other styles you might want to apply */
-  };
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -23,17 +17,7 @@ const divStyle = {
     justifyContent: 'center',
     width: '400px', // Adjust the width as needed
     height: '200px',
-
-    // background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
   };
-
-  const imageStyle = {
-    width: '390px',
-    height: '200px',
-    marginBottom: '16px',
-  };
-
-
 
   return (
     <>

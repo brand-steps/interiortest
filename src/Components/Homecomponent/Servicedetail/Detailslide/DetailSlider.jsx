@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-
-
-import { useNavigate } from 'react-router-dom';
-
-
 const DetailSlide = (props) => {
-
-
 
   const divStyle = {
     backgroundImage: `url('https://img.freepik.com/premium-photo/large-luxury-modern-bright-interiors-room-illustration-3d-rendering_653967-4111.jpg')`,
@@ -34,17 +27,6 @@ const DetailSlide = (props) => {
     marginBottom: '16px',
   };
 
-  const buttonStyle = {
-    background: '#EC0C36',
-    color: 'white',
-    fontWeight: 'bold',
-    padding: '8px 16px',
-    borderRadius: '8px',
-    marginTop: '12px',
-    cursor: 'pointer',
-  };
-
-  const navigate = useNavigate();
   const images = [props.img1,props.img2 , props.img3];
   const headings = [' Best Quality Service', 'Best Quality Service', 
   'Best Selling Website'];
@@ -107,24 +89,13 @@ const DetailSlide = (props) => {
   {/*    <div className="mx-auto relative w-12/12 h-5/6	">  
       <h1 className='text-xl lg:text-7xl md:text-5xl sm:text-3xl font-extrabold mb-9 txtcolor'>{headings[currentHeadingIndex]} </h1>
 <h1 className='text-6xl font-bold text-black'>Brighton Car Sales</h1>    
-
-
-    
     <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
-
-    </div>
-
-    
+    </div>    
     <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
     
     </div>
   </div> */}
       </div>
-
-
-
-
-      
     </div>
     </div>
   );

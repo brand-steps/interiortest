@@ -90,11 +90,6 @@ const divStyle = {
     backgroundPepeat: 'no-repeat'
     // background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
   };
-  const imageStyle = {
-    width: '390px',
-    height: '200px',
-    marginBottom: '16px',
-  };
 
   return (
     <>

@@ -5,9 +5,6 @@ import { Button, Navbar } from 'flowbite-react';
 
 const NavContact = () => {
 
-
-
-
   return (
     <Navbar fluid rounded className=' border-b-2 border-rose-500 text-black bg-amber-400 dark:bg-amber-400 h-12'>
     <Navbar.Brand href="">
@@ -22,13 +19,10 @@ const NavContact = () => {
       
     </div>
     <Navbar.Collapse>
-
     <Navbar.Brand href="">
-        
     <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
      <span className="self-center whitespace-nowrap text-xl font-semibold">Address comes here</span>
     </Navbar.Brand>
-
     </Navbar.Collapse>
   </Navbar>
   );

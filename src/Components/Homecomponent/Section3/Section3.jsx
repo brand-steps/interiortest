@@ -68,8 +68,6 @@ const [hover, sethover] = useState(false)
             </div>
                        </Link>
  </li>
-          
-             
          </ul>
       </div>
      </div>

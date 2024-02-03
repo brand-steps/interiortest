@@ -9,10 +9,6 @@ const ManageImages = () => {
   const [products, setProducts] = useState([]);
   const [productsBoolean, setProductsBoolean] = useState(false);
   const [Delete , setdelete] = useState(false);
-    const divStyle = {
-        backgroundImage: "url('https://www.osimo.com.tr/assets/images/media-bg.jpg')",
-        /* Other styles you might want to apply */
-      };
     
       const containerStyle = {
         display: 'flex',
@@ -41,8 +37,7 @@ const ManageImages = () => {
         width: '80px'
       };
       const buttonStyle2 = {
-        background: 'red',
-        color: 'black',
+        color: 'white',
         fontWeight: 'bold',
         padding: '8px 16px',
         marginTop: '12px',
@@ -68,21 +63,15 @@ const ManageImages = () => {
         }
         alert("Product deleted");
       };
-      
-
       useEffect(() => {
         console.log('asdasd')
         getAllProducts()
-        // return () => {
-        //   console.log('Cleanup Function');
-        //  }
     }, [Delete , productsBoolean ])
   return (
         <>
-        <button style={buttonStyle2} onClick={()=>{navigate(`/Addsimage`, { replace: true }) }} className='inline-block'>Add Images</button>
+        <button style={buttonStyle2} onClick={()=>{navigate(`/Addsimage`, { replace: true }) }} className='inline-block bg-red-700'>Add Images</button>
 
         <div className='flex  justify-evenly flex-wrap my-4'>
-        
           {products.map((value) => (
       <div style={containerStyle}>
       <Card
@@ -99,10 +88,6 @@ const ManageImages = () => {
     
       </div>
           ))}
-
-    
-
-      
     </div>
 
         </>

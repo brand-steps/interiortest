@@ -13,10 +13,6 @@ const NavbarMain = () => {
         <img src={logo} className="mr-3 h-16 sm:h-20" alt="Flowbite React Logo" />
       </Navbar.Brand>
       <div className="flex md:order-2">
-
-
-
-        
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
@@ -27,8 +23,6 @@ const NavbarMain = () => {
         </Link>
         <Link to={"/About"}>
         <Navbar.Link  className='text-lg divhead text-black '> About Us</Navbar.Link> </Link>
-
-       
        <Dropdown
           arrowIcon={false}
           inline
@@ -55,14 +49,12 @@ const NavbarMain = () => {
           <Dropdown.Item >3D Studio</Dropdown.Item>
           </Link>
         </Dropdown>
-        
         <Link to={"/Album"}>
         <Navbar.Link className='text-lg divhead text-black '> Gallery</Navbar.Link>
         </Link>
-        
+
       </Navbar.Collapse>
     </Navbar>
-
 </div>
   )
 }

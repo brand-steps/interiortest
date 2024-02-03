@@ -9,17 +9,12 @@ const AddImage = () => {
   const navigate = useNavigate();
     const [service, setservice] = useState()
     const [project, setproject] = useState()
-   
-    const [priceError, setpriceError] = useState();
-    const [installmentError, setinstallmentError] = useState();
-    const [installmentmonthsError, setinstallmentmonthsError] = useState();
 
     const [image1, setimage1] = useState([]);
 
 
     const buttonStyle2 = {
-      background: 'red',
-      color: 'black',
+      color: 'white',
       fontWeight: 'bold',
       padding: '8px 16px',
       marginTop: '12px',
@@ -79,7 +74,7 @@ console.log("img",image1)
   };
   return (
         <>
-                <button style={buttonStyle2} onClick={()=>{navigate(`/manageimage`, { replace: true }) }} className='inline-block'>Delete Images</button>
+                <button style={buttonStyle2} onClick={()=>{navigate(`/manageimage`, { replace: true }) }} className='inline-block bg-red-700'>Delete Images</button>
 
 <h1 className='text-3xl font-bold text-black text-center mt-5'>Add images</h1>
         <div className='mx-10 my-6 '>
