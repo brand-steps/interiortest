@@ -81,6 +81,7 @@ const ManageImages = () => {
 
       <p className="font-normal text-gray-700 ">
        Service: {value.service} , Project: {value.project}  <br/>
+       description: {value.description} <br />
       <button style={buttonStyle} onClick={()=>{deleteData(value._id)}} className='inline-block'>Delete</button>
 
       </p>

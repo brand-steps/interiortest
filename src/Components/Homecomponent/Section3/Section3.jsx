@@ -16,7 +16,7 @@ const [hover, sethover] = useState(false)
   </div>
 </div>
 
-    <div className='flex  justify-evenly flex-wrap my-4' >
+    <div className='flex  justify-evenly flex-wrap my-4 ' >
     <div className="container">
    <div className="row">
     <div className="col-lg-12">

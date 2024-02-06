@@ -14,6 +14,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   let backurl = "https://dull-leopard.cyclic.ap p"
+  let csssticky = "fixed z-40 left-0 right-0"
   return (
     <div className="App">
       <BrowserRouter>

@@ -5,7 +5,7 @@ import IconButton from '@mui/material/IconButton';
 import axios from 'axios';
 
 
-const OfficialGallery = () => {
+const CorporateGallery = () => {
 const [hover, sethover] = useState(false)
 const [open, setOpen] = React.useState(false);
 const [products, setProducts] = useState([]);
@@ -14,7 +14,7 @@ const [Delete , setdelete] = useState(false);
 
 const getAllProducts = async () => {
   try {
-    const response = await axios.get(`https://dull-leopard.cyclic.app/Allimage`);
+    const response = await axios.get(`https://dull-leopard.cyclic.app/corporateimage`);
     console.log("response: ", response);
     console.log(products);
     setProducts(response.data.data);
@@ -58,13 +58,13 @@ const handleClickOpen = () => {
 
     <div >
         <div className='ml-4 md:ml-16 p-4 '>
-  <div style={{ "textTransform": "uppercase" }} className='text-3xl text-center md:text-3xl font-bold mt-6'>Our Project Album </div>
+  <div style={{ "textTransform": "uppercase" }} className='text-3xl text-center md:text-3xl font-bold '>Corporate Projects </div>
 
  {/* <div className='w-full md:w-72 text-center' style={{ "border": "1px solid red" }}>
      Content for the inner div 
   </div>*/}
 </div>
-<div className='flex  justify-evenly  flex-wrap my-4 pt-12 py-16' >
+<div className='flex  justify-evenly  flex-wrap my-4  py-2' >
 
 {products.map((value) => (
   <>
@@ -104,4 +104,4 @@ const handleClickOpen = () => {
   );
 }
 
-export default OfficialGallery;
+export default CorporateGallery;

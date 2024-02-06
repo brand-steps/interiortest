@@ -8,7 +8,7 @@ const NavbarMain = () => {
   return (
     <div>
       <NavContact/>
-      <Navbar fluid rounded className='bg-white dark:bg-white'>
+      <Navbar fluid rounded className='bg-white dark:bg-white mb-6 shadow-xl  '>
       <Navbar.Brand href="https://interiortest.vercel.app/">
         <img src={logo} className="mr-3 h-16 sm:h-20" alt="Flowbite React Logo" />
       </Navbar.Brand>
@@ -27,7 +27,7 @@ const NavbarMain = () => {
           arrowIcon={false}
           inline
           label={
-            <Navbar.Link className='text-lg divhead text-black '> Services</Navbar.Link>
+            <Navbar.Link className='text-lg divhead text-black '>  Services</Navbar.Link>
           }
         >
           <Link to={"/interiordesign"}>

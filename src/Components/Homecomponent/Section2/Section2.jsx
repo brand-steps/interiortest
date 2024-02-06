@@ -93,7 +93,7 @@ const divStyle = {
 
   return (
     <>
-    <div style={divStyle}>
+    <div style={divStyle} id='services'>
         <div className='ml-4 md:ml-16 p-4 mb-8'>
   <div style={{ "textTransform": "uppercase" }} className='text-3xl md:text-3xl font-bold mt-6'>Services We Do </div>
 

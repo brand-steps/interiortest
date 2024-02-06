@@ -9,6 +9,7 @@ const AddImage = () => {
   const navigate = useNavigate();
     const [service, setservice] = useState()
     const [project, setproject] = useState()
+    const [description, setdescription] = useState()
 
     const [image1, setimage1] = useState([]);
 
@@ -50,6 +51,8 @@ console.log("img",image1)
    
     formData.append("service", service);
     formData.append("project", project);
+    formData.append("description", description);
+
   
     try {
         if (service && project && image1) {
@@ -114,8 +117,8 @@ console.log("img",image1)
 
   </div>
 
-
-  <button type="submit" onClick={handleUpload} className="text-white bg-red-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Add Image</button>
+  <TextField fullWidth multiline maxRows={6}  onChange={(event) => { setdescription(event.target.value);  }} placeholder='Enter Description' name="description" variant="outlined" className='block py-2.5 px-0 w-full focus:text-white text-sm text-white  border-0 border-b-2 border-white bg-white appearance-none  focus:outline-none focus:ring-0 focus:border-blue-600 peer'/>
+  <button type="submit" onClick={handleUpload} className="text-white bg-red-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center mt-4">Add Image</button>
 </div>
 
         </>
