@@ -25,13 +25,13 @@ function Corousels() {
           <div className="h-96">
       <Carousel>
         <div className="flex h-full items-center justify-center bg-gray-400" style={divStyle}>
-          <p className='font-bold text-3xl sm:text-5xl text-white text-center'>Expertise For Interior Designing</p>
+          <p className='font-bold text-3xl sm:text-5xl text-white text-center'>Where Creativity Meets Craftsmanship</p>
         </div>
         <div className="flex h-full items-center justify-center bg-gray-400" style={divStyle2}>
-        <p className='font-bold text-3xl text-white sm:text-5xl text-center'>Interior Design Is Thinking</p>
+        <p className='font-bold text-3xl text-white sm:text-5xl text-center'>Designing Dreams, Building Realities</p>
         </div>
         <div className="flex h-full items-center justify-center bg-gray-400" style={divStyle3}>
-        <p className='font-bold text-3xl text-white sm:text-5xl text-center'>interior Remodelling to Remake</p>
+        <p className='font-bold text-3xl text-white sm:text-5xl text-center'>Tailored Designs for Modern Living</p>
         </div>
       </Carousel>
     </div>

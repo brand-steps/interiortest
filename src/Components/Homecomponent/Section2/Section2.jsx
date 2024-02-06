@@ -69,7 +69,7 @@ const divStyle = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: "url('https://dhb3yazwboecu.cloudfront.net/1384/home/Home_Kubik_slide_1000x947.webp')",
+    backgroundImage: "url('https://img.freepik.com/premium-photo/majestic-fountain-illuminated-by-moonlight-casting-mesmerizing-glow-surrounding_968529-36802.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1700524800&semt=ais')",
     width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',

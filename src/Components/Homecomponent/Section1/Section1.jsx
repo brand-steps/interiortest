@@ -23,12 +23,14 @@ const Section1 = () => {
       </div>
       <div style={containerStyle} >
         <h1 className='font-extrabold text-5xl mb-6 mt-16 text-amber-400 '>WELCOME TO </h1>
-        <h1 className='font-extrabold text-4xl mb-6 mt-3 '>Interior Designing Website </h1>
+        <h1 className='font-extrabold text-4xl mb-6 mt-3 '>Modern Design Furnishers </h1>
 
-        <p className='mt-6 mb-6'>We are a reputed firm providing construction and interior design services. We hold expertise in creating designs that can offer value to our customers. Our interior design can truly elevate the spirit as well. Our team strives to come up with the best energy and money saving techniques.
+        <p className='mt-6 mb-6'>Modern Design Furnishers is a premier destination for individuals seeking innovative solutions for their interior and exterior design needs. Specializing in custom-made furniture and comprehensive design services, we offer a unique blend of creativity, functionality, and craftsmanship to enhance any space.
 </p>
-<h1 className='font-bold my-4 '>Restaurant, showroom, office, shopping malls and interior design are our forte.</h1>
-<p>We are located in Karachi among best interior design companies. If you want to give your ideas a realistic perception, then we are the right people to contact. We are a team that does not believe in compromising on quality. Our team believes in thinking out of the box and we go the extra mile to achieve our objectives.</p>
+<h1 className='font-bold my-4 '>Our range of services includes interior design, exterior design, and bespoke furniture creation. </h1>
+<p>At Modern Design Furnishers, we understand that each client has unique preferences and requirements when it comes to designing their living or working environment. That's why we take a personalized approach to every project, collaborating closely with our clients to bring their vision to life.
+From concept development to final installation, we prioritize quality, attention to detail, and customer satisfaction. With a focus on modern aesthetics, practicality, and sustainability, we strive to create spaces that reflect our clients' lifestyles, tastes, and values.
+</p>
       </div>
  
   

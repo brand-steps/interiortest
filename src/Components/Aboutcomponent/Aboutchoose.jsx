@@ -31,20 +31,20 @@ const divStyle = {
       <Link to={'/interiordesign'}>
     <div style={containerStyle} className='mt-4 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
 <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'> Experienced Staff</p>
-<p className='text-white font-semibold text-base text-center mt-4'>We have experienced staff of interior designers, Archetectures, 3D Designers, etc.</p>
+<p className='text-white font-semibold text-base text-center mt-4'>our experienced staff brings unparalleled expertise and creativity to every project,</p>
 </div>
 </Link> 
 <Link to={"/exteriordetails"}>
 <div style={containerStyle} className='mt-4 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'>Creative Designers</p>
-        <p className='text-white font-semibold text-base text-center mt-4'>Our designing team designs with your taste, space, and budget, Also our team will guide you.</p>
+        <p className='text-white font-semibold text-base text-center mt-4'>our team of creative designers is dedicated to transforming your space into a work of art</p>
 
       </div>
       </Link>
       <Link to={"/Architecturedetails"}>
       <div style={containerStyle} className='mt-4 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'>Free Consultation</p>
-        <p className='text-white font-semibold text-base text-center mt-4'>We providing free consultation about interior quality, space, budget and etc but it is free for all.</p>
+        <p className='text-white font-semibold text-base text-center mt-4'> we offer complimentary consultations to help you envision the perfect design for your space</p>
 
       </div>
       </Link>

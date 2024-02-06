@@ -30,9 +30,9 @@ const About = () => {
 <HeadBar name="About Us" img="https://www.feeta.pk/blog/wp-content/uploads/2022/04/How-To-Relish-The-Richness-Of-Dark-Interior-Design-1.jpg"/>
     <div className='flex  justify-center flex-wrap my-4' >
     <div style={containerStyle2}>
-        <h1 className="text-3xl font-bold mb-4 mt-3">Our entire way of working is shaped by what you need and want.</h1>
-        <p className="text-black text-base ">We are a reputed firm providing construction and interior design services. We hold expertise in creating designs that can offer value to our customers. Our interior design can truly elevate the spirit as well. Our team strives to come up with the best energy and money saving techniques.</p>
-        <p className="text-black text-base mt-4 mb-3">We ensure that we render images for our clients so that they can get to see the complete design. What you will like about our service is that our work can be termed as architecturally accurate and it is quite detailed also.</p>
+        <h1 className="text-3xl font-bold mb-4 mt-3">Elevate Your Space with Bespoke Design Solutions</h1>
+        <p className="text-black text-base ">Modern Design Furnishers is a leading provider of innovative and bespoke solutions for interior and exterior design, offering a comprehensive range of services to cater to diverse design needs. With a commitment to excellence, creativity, and craftsmanship, we specialize in crafting custom-made furniture pieces and delivering tailored design solutions that elevate living and working spaces to new heights.</p>
+        <p className="text-black text-base mt-4 mb-3">Our interior design services encompass a wide range of styles, from modern and contemporary to classic and timeless, ensuring that we can cater to diverse tastes and preferences. </p>
 
       </div>
       <div style={containerStyle2}>
@@ -45,14 +45,12 @@ const About = () => {
 
       </div>
       <div style={containerStyle2}>
-        <h1 className="text-3xl font-bold mb-4 mt-3">Who We Are</h1>
-        <p className="text-black text-base ">If you want to give your ideas a realistic perception, then we are the right people to contact. We are a team that does not believe in compromising on quality. Our team believes in thinking out of the box and we go the extra mile to achieve our objectives.
-
-We are truly evolving with the passage of time and we believe that we have a bright future ahead because we have got exciting concepts and ideas to offer. This is why you should get in touch with us right away to avail our interior design services.
+        <h1 className="text-3xl font-bold mb-4 mt-3">Transforming Ideas into Timeless Designs.</h1>
+        <p className="text-black text-base ">At Modern Design Furnishers, we understand that every space has its unique personality, and we believe in harnessing the power of design to create environments that reflect the individuality and lifestyle of our clients. Whether it's a residential project, a commercial space, or an outdoor area, our team of experienced designers, architects, and craftsmen work collaboratively to transform ideas into reality, delivering stunning results that exceed expectations.
 
 
 </p>
-        <p className="text-black text-base mt-4 mb-3">We are truly evolving with the passage of time and we believe that we have a bright future ahead because we have got exciting concepts and ideas to offer. This is why you should get in touch with us right away to avail our interior design services.
+        <p className="text-black text-base mt-4 mb-3">In addition to interior design, we also offer comprehensive exterior design services, helping clients enhance their outdoor spaces with innovative landscaping, lighting, and architectural elements. 
 
 </p>
 
