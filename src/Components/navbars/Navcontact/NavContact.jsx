@@ -9,7 +9,7 @@ const NavContact = () => {
     <Navbar fluid rounded className=' border-b-2 border-rose-500 text-black bg-amber-400 dark:bg-amber-400 h-12 '>
     <Navbar.Brand href="">
     <img src="https://www.freeiconspng.com/thumbs/phone-icon/office-phone-icon--25.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
-      <span className="self-center whitespace-nowrap text-xl font-semibold">01273 232211</span>
+      <span className="self-center whitespace-nowrap text-xl font-semibold">0335 1329550</span>
     </Navbar.Brand>
     <div className="flex md:order-2">
       <p className='text-black'>      
@@ -19,9 +19,9 @@ const NavContact = () => {
       
     </div>
     <Navbar.Collapse>
-    <Navbar.Brand href="">
+    <Navbar.Brand >
     <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
-     <span className="self-center whitespace-nowrap text-xl font-semibold">Address comes here</span>
+     <span className="self-center whitespace-nowrap text-xl font-semibold">Defence view near Iqra University, Karachi</span>
     </Navbar.Brand>
     </Navbar.Collapse>
   </Navbar>
