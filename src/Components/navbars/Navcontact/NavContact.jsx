@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 import { Button, Navbar } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 
 const NavContact = () => {
@@ -13,8 +14,11 @@ const NavContact = () => {
     </Navbar.Brand>
     <div className="flex md:order-2">
       <p className='text-black'>      
-        <img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
+ {/*}       <img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
+     */}
+     <Link to='https://www.facebook.com/MODERNDESIGNFURNISHERS9/' target='_blank'>
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" className="mr-3 inline h-8 " alt="Flowbite React Logo" />
+        </Link>
 </p>
       
     </div>
