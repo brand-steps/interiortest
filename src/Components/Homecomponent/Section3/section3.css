@@ -42,11 +42,11 @@ a:hover {
     width: 100%;
     height: 100%;
     left: 0;
-    top: 0;
-    background-color: rgba(22, 22, 22, 0.6);
+    top: 0; /*
+    background-color: rgba(22, 22, 22, 0.6); */
     transition: all 0.3s;
 }
-
+/*
 .featuredPropBox ul li:nth-child(1) {
     background-image: url('https://i.ibb.co/ZmtmLGK/a.jpg');
 }
@@ -81,7 +81,7 @@ a:hover {
 .featuredPropBox ul li:nth-child(9) {
     background-image: url('https://i.ibb.co/RhZgpSG/20845.jpg');
 }
-
+*/
 .featuredPropBox ul li .fplogo {
     left: 50%;
     position: absolute;

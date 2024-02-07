@@ -14,11 +14,12 @@ const NavContact = () => {
     </Navbar.Brand>
     <div className="flex md:order-2">
       <p className='text-black'>      
- {/*}       <img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
-     */}
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
+     
      <Link to='https://www.facebook.com/MODERNDESIGNFURNISHERS9/' target='_blank'>
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" className="mr-3 inline h-8 " alt="Flowbite React Logo" />
         </Link>
+
 </p>
       
     </div>
