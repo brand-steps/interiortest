@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import bgimg from '../../../Assets/resizebg.png'
+import interior from '../../../Assets/img6.png'
+import exterior from '../../../Assets/img3.png'
+import studio from '../../../Assets/img7.png'
+import furni from '../../../Assets/img2.png'
+import archi from '../../../Assets/img1.png'
+import scapes from '../../../Assets/img5.png'
+
 const Section2 = () => {
 const [hover, sethover] = useState(false)
 
 
 const divStyle = {
-  backgroundImage: `url('https://t3.ftcdn.net/jpg/03/73/51/06/360_F_373510690_cQQLplLNbi0l84A7sftZq8dSvdKOGCcj.jpg')`,
+  backgroundImage: `url(${bgimg})`,
   /* Other styles you might want to apply */
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -17,7 +25,7 @@ const divStyle = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: "url('https://i.pinimg.com/736x/8e/96/5e/8e965eccc96a868ddfd0bf77b365f168.jpg')",
+    backgroundImage: `url(${interior})`,
     width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
@@ -30,7 +38,7 @@ const divStyle = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: "url('https://i.pinimg.com/736x/64/41/b9/6441b994edbd71f2754c17fb733af948.jpg')",
+    backgroundImage: `url(${exterior})`,
     width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
@@ -43,7 +51,7 @@ const divStyle = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: "url('https://img.freepik.com/premium-photo/modern-house-exterior-with-garage-design-dark-gray-color_124507-22179.jpg')",
+    backgroundImage: `url(${archi})`,
     width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
@@ -56,7 +64,7 @@ const divStyle = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: "url('https://img.freepik.com/premium-photo/dark-living-room-interior-design-with-sofa-plant-3d-rendering-background_517102-221.jpg')",
+    backgroundImage: `url(${furni})`,
     width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
@@ -69,7 +77,7 @@ const divStyle = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: "url('https://img.freepik.com/premium-photo/majestic-fountain-illuminated-by-moonlight-casting-mesmerizing-glow-surrounding_968529-36802.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1700524800&semt=ais')",
+    backgroundImage: `url(${scapes})`,
     width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
@@ -82,7 +90,7 @@ const divStyle = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: "url('https://img.pikbest.com/ai/illus_our/20230428/9c9d8d8ac74298b98d5981dadda1ce62.jpg!w700wp')",
+    backgroundImage: `url(${studio})`,
     width: '350px', // Adjust the width as needed
     height: '200px',
     backgroundSize: 'cover',
@@ -97,40 +105,40 @@ const divStyle = {
         <div className='ml-4 md:ml-16 p-4 mb-8'>
   <div style={{ "textTransform": "uppercase" }} className='text-3xl md:text-3xl font-bold mt-6'>Services We Do </div>
 
-  <div className='w-full md:w-72' style={{ "border": "1px solid red" }}>
+  <div className='w-full md:w-72 border-2 border-amber-400' >
     {/* Content for the inner div */}
   </div>
 </div>
     <div className='flex  justify-evenly flex-wrap my-4 pt-12 py-16' >
       <Link to={'/interiordesign'}>
-    <div style={containerStyle} className='mt-4 hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
+    <div style={containerStyle} className='border-4 rounded-xl border-amber-400 mt-4 hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
 <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'> Interior Design</p>
 </div>
 </Link> 
 <Link to={"/exteriordetails"}>
-<div style={containerStyle2} className='mt-4 hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
+<div style={containerStyle2} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'>Exterior Design</p>
       </div>
       </Link>
       <Link to={"/Architecturedetails"}>
-      <div style={containerStyle3} className='mt-4 hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
+      <div style={containerStyle3} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'>Architecture & Construction</p>
       </div>
       </Link>
 
     
       <Link to={"/Furnituredetails"}>
-    <div style={containerStyle4} className='mt-4 hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
+    <div style={containerStyle4} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'> Custom Made Furniture</p>
       </div>
       </Link>
       <Link to={"/Landscapingdetails"}>
-      <div style={containerStyle5} className='mt-4 hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
+      <div style={containerStyle5} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'> Landscaping & Fountains</p>
       </div>
       </Link>
       <Link to={"/Studiodetails"}>
-      <div style={containerStyle6} className='mt-4 hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
+      <div style={containerStyle6} className='mt-4 border-4 border-amber-400 rounded-xl hover:opacity-80 hover:scale-x-110 transition duration-500 cursor-pointer object-cover ' onMouseEnter={()=> {sethover(true)}} onMouseLeave={()=> {sethover(false)}}>
         <p className='font-bold text-2xl text-white sm:text-2xl lg:text-4xl text-center'> 3D Studio</p>
       </div>
       </Link>

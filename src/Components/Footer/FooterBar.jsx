@@ -7,7 +7,7 @@ import logo from '../../Assets/intlogo.png'
 
 function FooterBar() {
   return (
-    <Footer container className='bg-slate-50 dark:bg-slate-50 '>
+    <Footer container className='bg-gradient-to-b from-amber-400 to-slate-100 '>
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
@@ -85,6 +85,8 @@ function FooterBar() {
                <Link to='https://www.facebook.com/MODERNDESIGNFURNISHERS9/' target='_blank'>
                 <Footer.Link  className='text-black'>Facebook</Footer.Link>
                 </Link>
+                <Footer.Link  className='text-black'>Instagram</Footer.Link>
+                <Footer.Link  className='text-black'>Twitter</Footer.Link>
               </Footer.LinkGroup>
             </div>
             {/*}
@@ -114,6 +116,9 @@ function FooterBar() {
         <img src={insta} className="mr-3 inline h-7 " alt="Flowbite React Logo" />
         <img src={phone} className="mr-3 inline h-7 " alt="Flowbite React Logo" /> */}
        <a href="https://www.facebook.com/MODERNDESIGNFURNISHERS9/" target='_blank'> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" className="mr-3 inline h-7 " alt="Facebook logo" /></a>
+       <a href="https://www.facebook.com/MODERNDESIGNFURNISHERS9/" target='_blank'> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" className="mr-3 inline h-7 " alt="Facebook logo" /></a>
+       <a href="https://www.facebook.com/MODERNDESIGNFURNISHERS9/" target='_blank'> <img src="https://freelogopng.com/images/all_img/1690643591twitter-x-logo-png.png" className="mr-3 inline h-7 " alt="Facebook logo" /></a>
+
           </div>
         </div>
       </div>

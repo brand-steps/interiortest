@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './section3.css'
 import React, { useState } from 'react';
+import archi from '../../../Assets/archim.png'
 
 const Section3 = () => {
 const [hover, sethover] = useState(false)
@@ -11,7 +12,7 @@ const [hover, sethover] = useState(false)
         <div className='ml-4 md:ml-16 p-4 mb-8'>
   <div style={{ "textTransform": "uppercase" }} className='text-3xl md:text-3xl font-bold mt-6'>Our Projects </div>
 
-  <div className='w-full md:w-72' style={{ "border": "1px solid red" }}>
+  <div className='w-full md:w-72 border-2 border-amber-400'>
     {/* Content for the inner div */}
   </div>
 </div>

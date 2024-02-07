@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import bgimg from '../../../../Assets/resizebg.png'
 const DetailSlide = (props) => {
 
   const divStyle = {

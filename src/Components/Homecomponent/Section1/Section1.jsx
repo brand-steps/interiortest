@@ -1,5 +1,5 @@
 import React from 'react';
-
+import imgs from '../../../Assets/section1-2.png'
 const Section1 = () => {
 
   const containerStyle = {
@@ -19,7 +19,7 @@ const Section1 = () => {
   return (
     <div className='flex  justify-evenly flex-wrap my-12'>
              <div style={containerStyle} >
-        <img src="https://static.tekce.com/files/sayfalar/img/tekce-anasayfa-gorsel-400x700-02-01.jpg" alt="Fairs" style={imageStyle} className=''/>
+        <img src="https://i.pinimg.com/564x/6b/e0/76/6be0766c86cd03c97a5ef2bd8c833edf.jpg" alt="Fairs" style={imageStyle} className=''/>
       </div>
       <div style={containerStyle} >
         <h1 className='font-extrabold text-5xl mb-6 mt-16 text-amber-400 '>WELCOME TO </h1>
