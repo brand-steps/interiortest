@@ -3,7 +3,7 @@ import NavbarMain from "../../Components/navbars/Navbarmain/NavbarMain";
 import FooterBar from "../../Components/Footer/FooterBar";
 import HeadBar from "../../Components/navbars/Headbar/HeadBar";
 import AboutChoose from "../../Components/Aboutcomponent/Aboutchoose";
-
+import imgs from '../../Assets/interiorb.jpg'
 const About = () => {
     
       const imageStyle = {
@@ -27,7 +27,7 @@ const About = () => {
     <>
     <NavbarMain/>
 
-<HeadBar name="About Us" img="https://www.feeta.pk/blog/wp-content/uploads/2022/04/How-To-Relish-The-Richness-Of-Dark-Interior-Design-1.jpg"/>
+<HeadBar name="About Us" img={imgs}/>
     <div className='flex  justify-center flex-wrap my-4' >
     <div style={containerStyle2}>
         <h1 className="text-3xl font-bold mb-4 mt-3">Elevate Your Space with Bespoke Design Solutions</h1>

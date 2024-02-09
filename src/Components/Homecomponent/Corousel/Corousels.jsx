@@ -1,25 +1,26 @@
 import React from 'react';
 import { Carousel } from 'flowbite-react';
+import img1 from '../../../Assets/mainbanner.jpg';
+import img2 from '../../../Assets/mainbanner2.jpg';
+import img3 from '../../../Assets/mainbanner3.jpg';
 
 function Corousels() {
   const divStyle = {
-    backgroundImage: `url('https://www.decorilla.com/online-decorating/wp-content/uploads/2022/03/Dark-modern-house-interior-design.jpg')`,
-    /* Other styles you might want to apply */
+    backgroundImage: `url('${img1}')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     };
     const divStyle2 = {
-      backgroundImage: `url('https://adorable-home.com/wp-content/uploads/2016/06/Modern-dark-interiors-1.jpg')`,
-      /* Other styles you might want to apply */
+      backgroundImage: `url('${img2}')`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       };
       const divStyle3 = {
-        backgroundImage: `url('https://www.luxxu.net/blog/wp-content/uploads/2017/06/Home-Decor-Ideas-for-A-Dark-And-Luxurious-Interior-1.jpg')`,
-        /* Other styles you might want to apply */
+        backgroundImage: `url('${img3}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         };
+        
   return (
         <>
           <div className="h-96">

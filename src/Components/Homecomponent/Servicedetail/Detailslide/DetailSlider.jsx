@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import bgimg from '../../../../Assets/resizebg.png'
+import bgimg from '../../../../Assets/bgbanner.jpg'
+
 const DetailSlide = (props) => {
 
   const divStyle = {
-    backgroundImage: `url('https://img.freepik.com/premium-photo/large-luxury-modern-bright-interiors-room-illustration-3d-rendering_653967-4111.jpg')`,
+    backgroundImage: `url('${bgimg}')`,
     /* Other styles you might want to apply */
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -16,9 +17,7 @@ const DetailSlide = (props) => {
     alignItems: 'center',
     justifyContent: 'center',
     padding: '20px',
-
-    width: '650px', // Adjust the width as needed
-    // background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
+    width: '650px',
   };
 
   const imageStyle = {
@@ -84,8 +83,8 @@ const DetailSlide = (props) => {
   </div>
       </div>
       <div style={containerStyle}>
-      <h1 className='text-3xl font-bold text-black mt-6 mb-12'>{props.heading}</h1> 
-        <p className='text-black text-lg font-semibold'>{props.description} </p>
+      <h1 className='text-3xl font-bold text-black mt-6 mb-10'>{props.heading}</h1> 
+        <p className='text-black text-lg font-bold'>{props.description} </p>
   {/*    <div className="mx-auto relative w-12/12 h-5/6	">  
       <h1 className='text-xl lg:text-7xl md:text-5xl sm:text-3xl font-extrabold mb-9 txtcolor'>{headings[currentHeadingIndex]} </h1>
 <h1 className='text-6xl font-bold text-black'>Brighton Car Sales</h1>    

@@ -9,7 +9,7 @@ import CorporateGallery from '../../Components/Homecomponent/Projectgallery/Corp
 import RetailGallery from '../../Components/Homecomponent/Projectgallery/RetailGallery';
 import StudioProject from '../../Components/Homecomponent/Projectgallery/Studioproject';
 import RoomGallery from '../../Components/Homecomponent/Projectgallery/Roomgallery';
-
+import imgs from '../../Assets/bgimagem.png'
 const Gallery = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -18,7 +18,7 @@ const Gallery = () => {
   return (
     <div>
         <NavbarMain/>
-        <HeadBar name="Our Album" img="https://www.feeta.pk/blog/wp-content/uploads/2022/04/How-To-Relish-The-Richness-Of-Dark-Interior-Design-1.jpg"/>
+        <HeadBar name="Our Album" img={imgs}/>
     <ResidentialGallery/>
     <CommercialGallery/>
     <CorporateGallery/>

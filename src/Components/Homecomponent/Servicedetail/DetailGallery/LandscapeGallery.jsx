@@ -39,9 +39,8 @@ const handleClickOpen = () => {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '400px', // Adjust the width as needed
+    width: '400px',
 
-    // background: 'url("https://www.osimo.com.tr/assets/images/media-bg.jpg") center/cover no-repeat',
   };
 
   const imageStyle = {

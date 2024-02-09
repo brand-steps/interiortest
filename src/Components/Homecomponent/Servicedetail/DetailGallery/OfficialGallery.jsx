@@ -60,9 +60,6 @@ const handleClickOpen = () => {
         <div className='ml-4 md:ml-16 p-4 '>
   <div style={{ "textTransform": "uppercase" }} className='text-3xl text-center md:text-3xl font-bold mt-6'>Our Project Album </div>
 
- {/* <div className='w-full md:w-72 text-center' style={{ "border": "1px solid red" }}>
-     Content for the inner div 
-  </div>*/}
 </div>
 <div className='flex  justify-evenly  flex-wrap my-4 pt-12 py-16' >
 
