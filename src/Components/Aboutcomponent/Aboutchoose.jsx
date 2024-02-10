@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import bgimg from '../../Assets/mainbanner.jpg'
 const AboutChoose = () => {
 const [hover, sethover] = useState(false)
 
 const divStyle = {
-  backgroundImage: `url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ba4993108388437.5fbcd121e9065.jpg')`,
+  backgroundImage: `url(${bgimg})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundAttachment: "fixed"

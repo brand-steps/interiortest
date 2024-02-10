@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import bgimg from '../../../../Assets/bgbanner.jpg'
+import bgimg from '../../../../Assets/white.jpg'
 
 const DetailSlide = (props) => {
 

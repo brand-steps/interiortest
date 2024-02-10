@@ -4,6 +4,9 @@ import FooterBar from "../../Components/Footer/FooterBar";
 import HeadBar from "../../Components/navbars/Headbar/HeadBar";
 import AboutChoose from "../../Components/Aboutcomponent/Aboutchoose";
 import imgs from '../../Assets/interiorb.jpg'
+import imgs1 from '../../Assets/interior1.png'
+import imgs2 from '../../Assets/interior2.png'
+
 const About = () => {
     
       const imageStyle = {
@@ -36,12 +39,12 @@ const About = () => {
 
       </div>
       <div style={containerStyle2}>
-      <img src="https://media.designcafe.com/wp-content/uploads/2020/07/23154645/best-interior-designers-living-room-designs.jpg" alt="img" style={imageStyle} />
+      <img src={imgs1} alt="img" style={imageStyle} />
 
       </div>
 
       <div style={containerStyle2}>
-      <img src="https://hips.hearstapps.com/hmg-prod/images/interior-design-ideas-idea-9-dwell-1-1644331792.jpg" alt="img" style={imageStyle} />
+      <img src={imgs2} alt="img" style={imageStyle} />
 
       </div>
       <div style={containerStyle2}>
