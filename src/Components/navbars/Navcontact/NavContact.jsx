@@ -2,22 +2,24 @@ import React from 'react';
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 import { Button, Navbar } from 'flowbite-react';
 import { Link } from 'react-router-dom';
-
+import insta from '../../../Assets/insta.png'
+import phone from '../../../Assets/phone.png'
+import face from '../../../Assets/face.png'
 
 const NavContact = () => {
 
   return (
-    <Navbar fluid rounded className=' border-b-2 border-rose-500 text-black bg-amber-400 dark:bg-amber-400 h-12 '>
+    <Navbar fluid rounded className=' border-b-2 border-rose-500 text-black bg-gradient-to-r from-yellow-700 to-yellow-200 dark:bg-gradient-to-b from-yellow-700 to-yellow-200 h-12 '>
     <Navbar.Brand href="">
-    <img src="https://www.freeiconspng.com/thumbs/phone-icon/office-phone-icon--25.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
+    <img src={phone} className="mr-3 inline h-7 " alt="phone" />
       <span className="self-center whitespace-nowrap text-xl font-semibold">0335 1329550</span>
     </Navbar.Brand>
     <div className="flex md:order-2">
       <p className='text-black'>      
-        <img src="https://assets.stickpng.com/images/5ecec78673e4440004f09e77.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
+        <img src={insta} className="mr-3 inline h-7 " alt="Flowbite React Logo" />
      
      <Link to='https://www.facebook.com/MODERNDESIGNFURNISHERS9/' target='_blank'>
-        <img src="https://www.pngfind.com/pngs/b/57-579617_facebook-logo-circle-black-transparent-social-media-icons.png" className="mr-3 inline h-8 " alt="Flowbite React Logo" />
+        <img src={face} className="mr-3 inline h-8 " alt="Flowbite React Logo" />
         </Link>
 
 </p>

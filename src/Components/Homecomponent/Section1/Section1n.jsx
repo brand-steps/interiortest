@@ -26,7 +26,7 @@ const Section1n = () => {
       
       </div>
       <div style={containerStyle} className='animated fadeInLeft'>
-        <h1 className='font-extrabold text-5xl mb-6 mt-16 text-amber-400 '>WELCOME TO </h1>
+        <h1 className='font-extrabold text-5xl mb-6 mt-16 text-yellow-700 '>WELCOME TO </h1>
         <h1 className='font-extrabold text-4xl mb-6 mt-3 '>Modern Design Furnishers </h1>
 
         <p className='mt-6 mb-6'>Modern Design Furnishers is a premier destination for individuals seeking innovative solutions for their interior and exterior design needs. Specializing in custom-made furniture and comprehensive design services, we offer a unique blend of creativity, functionality, and craftsmanship to enhance any space.

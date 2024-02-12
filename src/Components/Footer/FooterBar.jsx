@@ -7,7 +7,7 @@ import logo from '../../Assets/intlogo.png'
 
 function FooterBar() {
   return (
-    <Footer container className='bg-gradient-to-b from-amber-400 to-slate-100 '>
+    <Footer container className='bg-gradient-to-b from-yellow-700 to-yellow-200 '>
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
