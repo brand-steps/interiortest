@@ -4,7 +4,6 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import axios from 'axios';
 
-
 const Exteriorgallery = () => {
 const [hover, sethover] = useState(false)
 const [open, setOpen] = React.useState(false);
@@ -57,19 +56,12 @@ const divStyle = {
     marginBottom: '16px',
   };
 
-
-
   return (
     <>
-
-
     <div >
         <div className='ml-4 md:ml-16 p-4 '>
   <div style={{ "textTransform": "uppercase" }} className='text-3xl text-center md:text-3xl font-bold mt-6'>Some Glimpse of our Exterior Designs </div>
 
- {/* <div className='w-full md:w-72 text-center' style={{ "border": "1px solid red" }}>
-     Content for the inner div 
-  </div>*/}
 </div>
 <div className='flex  justify-evenly  flex-wrap my-4 pt-12 py-16' >
 
