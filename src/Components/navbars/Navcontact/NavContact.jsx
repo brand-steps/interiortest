@@ -7,18 +7,17 @@ import phone from '../../../Assets/phone.png'
 import face from '../../../Assets/face.png'
 import insta2 from '../../../Assets/instared.png'
 import face2 from '../../../Assets/face2.png'
+import phones from '../../../Assets/phones.png'
+import addr from '../../../Assets/addr.webp'
 
 const NavContact = () => {
 let csss = "border-b-2 border-rose-500 text-black bg-gradient-to-r from-yellow-700 to-yellow-200"
 
-const txtclr = {
-  color: "red"
-}
   return (
     <Navbar fluid rounded className='border-b-2 border-rose-500 text-black bg-white dark:bg-white '>
     
     <Navbar.Brand href="">
-    <img src="https://assets.stickpng.com/images/5a4525bd546ddca7e1fcbc83.png" className="mr-3 inline h-7 " alt="phone" />
+    <img src={phones} className="mr-3 inline h-7 " alt="phone" />
       <span className="self-center whitespace-nowrap text-xs font-semibold font-sans">Call Anytime <br /> <p className='text-lg font-sans'> 0335 1329550 </p></span>
     </Navbar.Brand>
     <div className="flex md:order-2">
@@ -34,8 +33,8 @@ const txtclr = {
     </div>
     <Navbar.Collapse>
     <Navbar.Brand >
-    <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" className="mr-3 inline h-7 " alt="Flowbite React Logo" />
-     <span className="self-center whitespace-nowrap text-xl font-semibold font-sans">Defence view near Iqra University, Karachi</span>
+    <img src={addr} className="mr-3 inline h-7 " alt="Flowbite React Logo" />
+     <span className="self-center whitespace-nowrap text-xl font-medium font-serif">Defence view near Iqra University, Karachi</span>
     </Navbar.Brand>
     </Navbar.Collapse>
   </Navbar>
