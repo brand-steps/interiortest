@@ -53,7 +53,9 @@ const NavbarMain = () => {
         <Link to={"/Album"}>
         <Navbar.Link className='text-xl divhead font-semibold text-black '> Gallery</Navbar.Link>
         </Link>
-
+        <Link to={"/Shop"}>
+        <Navbar.Link className='text-xl divhead font-semibold text-black '> Shop Now</Navbar.Link>
+        </Link>
       </Navbar.Collapse>
     </Navbar>
 </div>

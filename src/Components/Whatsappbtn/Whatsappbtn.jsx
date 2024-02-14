@@ -16,7 +16,6 @@ const Whatsappbtn = () => {
 
   <a href="https://wa.me/+923351329550" target='_blank' className="text-blue-700 hover:text-blue-900 ">
   <img src={whatss} alt="whatsapp" className='iconimg inline-block mr-2' />
-  <span className='txtss font-bold text-base'>Chat With Us</span>
   </a>
   </button>
 
