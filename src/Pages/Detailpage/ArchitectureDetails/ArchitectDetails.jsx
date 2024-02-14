@@ -17,7 +17,7 @@ const ArchitectDetails = () => {
 <>
 <NavbarMain/>
 <HeadBar name="Architecture Designs" img={intimg}/>
-<DetailSlide heading="Designing Tomorrow's Landmarks, Today" description="Welcome to Modern Design Furnishers, your premier destination for comprehensive interior architecture and construction services. We specialize in creating innovative and functional spaces that elevate the way you live, work, and interact. With a dedicated team of architects, engineers, and craftsmen, we offer end-to-end solutions tailored to your unique needs and aspirations." img1= {archibg1} img2={archibg2} img3={archibg3}/>
+<DetailSlide heading="Designing Tomorrow's Landmarks, Today" description="Welcome to Modern Furnishers, your premier destination for comprehensive interior architecture and construction services. We specialize in creating innovative and functional spaces that elevate the way you live, work, and interact. With a dedicated team of architects, engineers, and craftsmen, we offer end-to-end solutions tailored to your unique needs and aspirations." img1= {archibg1} img2={archibg2} img3={archibg3}/>
 <Archigallery/>
 <FooterBar/>
 </>

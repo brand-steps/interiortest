@@ -17,7 +17,7 @@ const FurnitureDetails = () => {
 <>
 <NavbarMain/>
 <HeadBar name="Custom Furniture" img={imgs}/>
-<DetailSlide heading="Elevate Your Space with Custom Craftsmanship" description="Welcome to Modern Design Furnishers, where luxury meets craftsmanship in the realm of custom furniture design. Our bespoke furniture services offer discerning clients the opportunity to create truly unique pieces that reflect their individual style, taste, and personality. From concept to creation, our team of skilled artisans and designers is dedicated to bringing your vision to life with impeccable craftsmanship and attention to detail." img1= {intimg1} img2={intimg2} img3={intimg3}/>
+<DetailSlide heading="Elevate Your Space with Custom Craftsmanship" description="Welcome to Modern Furnishers, where luxury meets craftsmanship in the realm of custom furniture design. Our bespoke furniture services offer discerning clients the opportunity to create truly unique pieces that reflect their individual style, taste, and personality. From concept to creation, our team of skilled artisans and designers is dedicated to bringing your vision to life with impeccable craftsmanship and attention to detail." img1= {intimg1} img2={intimg2} img3={intimg3}/>
 <FurniGallery/>
 <FooterBar/>
 </>

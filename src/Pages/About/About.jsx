@@ -34,7 +34,7 @@ const About = () => {
     <div className='flex  justify-center flex-wrap my-4' >
     <div style={containerStyle2}>
         <h1 className="text-3xl font-bold mb-4 mt-3">Elevate Your Space with Bespoke Design Solutions</h1>
-        <p className="text-black text-base ">Modern Design Furnishers is a leading provider of innovative and bespoke solutions for interior and exterior design, offering a comprehensive range of services to cater to diverse design needs. With a commitment to excellence, creativity, and craftsmanship, we specialize in crafting custom-made furniture pieces and delivering tailored design solutions that elevate living and working spaces to new heights.</p>
+        <p className="text-black text-base ">Modern Furnishers is a leading provider of innovative and bespoke solutions for interior and exterior design, offering a comprehensive range of services to cater to diverse design needs. With a commitment to excellence, creativity, and craftsmanship, we specialize in crafting custom-made furniture pieces and delivering tailored design solutions that elevate living and working spaces to new heights.</p>
         <p className="text-black text-base mt-4 mb-3">Our interior design services encompass a wide range of styles, from modern and contemporary to classic and timeless, ensuring that we can cater to diverse tastes and preferences. </p>
 
       </div>
@@ -49,7 +49,7 @@ const About = () => {
       </div>
       <div style={containerStyle2}>
         <h1 className="text-3xl font-bold mb-4 mt-3">Transforming Ideas into Timeless Designs.</h1>
-        <p className="text-black text-base ">At Modern Design Furnishers, we understand that every space has its unique personality, and we believe in harnessing the power of design to create environments that reflect the individuality and lifestyle of our clients. Whether it's a residential project, a commercial space, or an outdoor area, our team of experienced designers, architects, and craftsmen work collaboratively to transform ideas into reality, delivering stunning results that exceed expectations.
+        <p className="text-black text-base ">At Modern Furnishers, we understand that every space has its unique personality, and we believe in harnessing the power of design to create environments that reflect the individuality and lifestyle of our clients. Whether it's a residential project, a commercial space, or an outdoor area, our team of experienced designers, architects, and craftsmen work collaboratively to transform ideas into reality, delivering stunning results that exceed expectations.
 
 
 </p>

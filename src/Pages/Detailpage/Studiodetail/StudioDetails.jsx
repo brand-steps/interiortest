@@ -17,7 +17,7 @@ const StudioDetails = () => {
 <>
 <NavbarMain/>
 <HeadBar name="3D Studio Designs" img={intimg}/>
-<DetailSlide heading="Designing Studios That Spark Innovation" description="Welcome to Modern Design Furnishers, where creativity and functionality converge to craft inspiring studio spaces tailored to your unique needs. Our studio designing services offer a blend of innovation, efficiency, and aesthetic appeal, ensuring that your studio becomes a space where your creative vision can thrive. Whether you're an artist, a photographer, a musician, or a filmmaker, we are dedicated to creating studio environments that inspire creativity, productivity, and innovation."
+<DetailSlide heading="Designing Studios That Spark Innovation" description="Welcome to Modern Furnishers, where creativity and functionality converge to craft inspiring studio spaces tailored to your unique needs. Our studio designing services offer a blend of innovation, efficiency, and aesthetic appeal, ensuring that your studio becomes a space where your creative vision can thrive. Whether you're an artist, a photographer, a musician, or a filmmaker, we are dedicated to creating studio environments that inspire creativity, productivity, and innovation."
  img1= {intimg1} img2={intimg2} img3={intimg3}/>
 <StudioGallery/>
 <FooterBar/>

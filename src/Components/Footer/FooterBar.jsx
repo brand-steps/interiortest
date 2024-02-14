@@ -2,91 +2,91 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { Footer } from 'flowbite-react';
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
-import logo from '../../Assets/intlogo.png'
+import logo from '../../Assets/logonew.png'
 
 
 function FooterBar() {
   return (
-    <Footer container className='bg-gradient-to-b from-yellow-700 to-yellow-200 '>
+    <Footer container className='bg-gradient-to-b from-gray-700 to-slate-200 '>
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
-            <img src={logo} alt="logo" className=' sm:h-32 h-24' />
+            <img src={logo} alt="logo" className=' sm:h-40 h-24' />
 
           </div>
           
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-4 sm:gap-16 mr-0 sm:mr-24 mt-6 sm:mt-0">
 
           <div>
-              <Footer.Title title="Projects" className='text-black'/>
+              <Footer.Title title="Projects" className='text-black font-serif'/>
               <Footer.LinkGroup col>
                 <Link to={'/Album'}>
-                <Footer.Link className='text-black'>Residential</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Residential</Footer.Link>
                 </Link>
                 <Link to={'/Album'}>
-                <Footer.Link className='text-black'>Corporate</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Corporate</Footer.Link>
                 </Link>
                 <Link to={'/Album'}>
-                <Footer.Link className='text-black'>Commercial</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Commercial</Footer.Link>
                 </Link>
                 <Link to={'/Album'}>
-                <Footer.Link className='text-black'>Retails</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Retails</Footer.Link>
                 </Link>
                 <Link to={'/Album'}>
-                <Footer.Link className='text-black'>Studios</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Studios</Footer.Link>
                 </Link>
                 <Link to={'/Album'}>
-                <Footer.Link className='text-black'>Rooms</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Rooms</Footer.Link>
                 </Link>
               </Footer.LinkGroup>
             </div>
 
           <div>
-              <Footer.Title title="Services" className='text-black'/>
+              <Footer.Title title="Services" className='text-black font-serif'/>
               <Footer.LinkGroup col>
                 <Link to={'/interiordesign'}>
-                <Footer.Link className='text-black'>Interior Design</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Interior Design</Footer.Link>
                 </Link>
                 <Link to={'/exteriordetails'}>
-                <Footer.Link className='text-black'>Exterior Design</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Exterior Design</Footer.Link>
                 </Link>
                 <Link to={'/Architecturedetails'}>
-                <Footer.Link className='text-black'>Construction</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Construction</Footer.Link>
                 </Link>
                 <Link to={'/Furnituredetails'}>
-                <Footer.Link className='text-black'>Furniture</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Furniture</Footer.Link>
                 </Link>
                 <Link to={'/Landscapingdetails'}>
-                <Footer.Link className='text-black'>Gardening</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Gardening</Footer.Link>
                 </Link>
                 <Link to={'/Studiodetails'}>
-                <Footer.Link className='text-black'>3D Studio</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Studio</Footer.Link>
                 </Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="about" className='text-black'/>
+              <Footer.Title title="about" className='text-black font-serif'/>
               <Footer.LinkGroup col>
                 <Link to={'/About'}>
-                <Footer.Link className='text-black'>About Us</Footer.Link>
+                <Footer.Link className='text-black font-serif'>About Us</Footer.Link>
                 </Link>
                 <Link to={'/'}>
-                <Footer.Link className='text-black'>Home</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Home</Footer.Link>
                 </Link>
                 <Link to={'/Album'}>
-                <Footer.Link className='text-black'>Gallery</Footer.Link>
+                <Footer.Link className='text-black font-serif'>Gallery</Footer.Link>
                 </Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Follow us" className='text-black'/>
+              <Footer.Title title="Follow us" className='text-black font-serif'/>
               <Footer.LinkGroup col>
                {/* <Footer.Link href="#"className='text-black'>Instagram</Footer.Link> */}
                <Link to='https://www.facebook.com/MODERNDESIGNFURNISHERS9/' target='_blank'>
-                <Footer.Link  className='text-black'>Facebook</Footer.Link>
+                <Footer.Link  className='text-black font-serif'>Facebook</Footer.Link>
                 </Link>
-                <Footer.Link  className='text-black'>Instagram</Footer.Link>
-                <Footer.Link  className='text-black'>Twitter</Footer.Link>
+                <Footer.Link  className='text-black font-serif'>Instagram</Footer.Link>
+                <Footer.Link  className='text-black font-serif'>Twitter</Footer.Link>
               </Footer.LinkGroup>
             </div>
             {/*}

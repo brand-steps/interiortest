@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Avatar, Dropdown, Navbar } from 'flowbite-react';
 import { Link, useNavigate } from 'react-router-dom';
 import NavContact from '../Navcontact/NavContact';
-import logo from '../../../Assets/intlogo.png'
+import logo from '../../../Assets/logonew.png'
+
 const NavbarMain = () => {
 
   return (
@@ -10,24 +11,24 @@ const NavbarMain = () => {
       <NavContact/>
       <Navbar fluid rounded className='bg-white dark:bg-white mb-6 shadow-xl  '>
       <Navbar.Brand href="https://interiortest.vercel.app/">
-        <img src={logo} className="mr-3 h-16 sm:h-20" alt="Flowbite React Logo" />
+        <img src={logo} className="mr-3 h-16 sm:h-24" alt="Flowbite React Logo" />
       </Navbar.Brand>
       <div className="flex md:order-2">
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
         <Link to={"/"}>
-        <Navbar.Link className='text-lg divhead text-black '> 
+        <Navbar.Link className='text-xl divhead font-semibold text-black '> 
           Home
         </Navbar.Link>
         </Link>
         <Link to={"/About"}>
-        <Navbar.Link  className='text-lg divhead text-black '> About Us</Navbar.Link> </Link>
+        <Navbar.Link  className='text-xl divhead font-semibold text-black '> About Us</Navbar.Link> </Link>
        <Dropdown
           arrowIcon={false}
           inline
           label={
-            <Navbar.Link className='text-lg divhead text-black '>  Services</Navbar.Link>
+            <Navbar.Link className='text-xl divhead font-semibold text-black '>  Services</Navbar.Link>
           }
         >
           <Link to={"/interiordesign"}>
@@ -50,7 +51,7 @@ const NavbarMain = () => {
           </Link>
         </Dropdown>
         <Link to={"/Album"}>
-        <Navbar.Link className='text-lg divhead text-black '> Gallery</Navbar.Link>
+        <Navbar.Link className='text-xl divhead font-semibold text-black '> Gallery</Navbar.Link>
         </Link>
 
       </Navbar.Collapse>

@@ -18,7 +18,7 @@ const LandscapingDetails = () => {
 <>
 <NavbarMain/>
 <HeadBar name="Gardening Landscaping" img={intimg}/>
-<DetailSlide heading="Where Beauty Blooms and Serenity Grows" description="Welcome to Modern Design Furnishers, where we extend our expertise beyond interior spaces to transform outdoor environments into stunning garden landscapes. Our gardening landscaping services offer a harmonious fusion of nature and design, creating picturesque outdoor retreats that enhance the beauty and functionality of your property. With a passion for horticulture and a commitment to excellence, our team of landscape architects and gardeners is dedicated to bringing your outdoor vision to life." 
+<DetailSlide heading="Where Beauty Blooms and Serenity Grows" description="Welcome to Modern Furnishers, where we extend our expertise beyond interior spaces to transform outdoor environments into stunning garden landscapes. Our gardening landscaping services offer a harmonious fusion of nature and design, creating picturesque outdoor retreats that enhance the beauty and functionality of your property. With a passion for horticulture and a commitment to excellence, our team of landscape architects and gardeners is dedicated to bringing your outdoor vision to life." 
 img1= {intimg1} img2={intimg2} img3={intimg3}/>
 <LandscapeGallery/>
 <FooterBar/>
